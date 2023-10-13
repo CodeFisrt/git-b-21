@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: #dfe9f5;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    background: #fff;
+    width: 275px;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+.logo span{
+    color: #54667a;
+}
+a {
+    position: relative;
+    display: table;
+    width: 280px;
+    padding: 10px;
+    text-decoration: none;
+    color: #a6b7bf;
+    font-weight: 300;
+}
+
+nav .fa-solid,
+.fa-regular {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 14px;
+    font-size: 17px;
+    text-align: center;
+}
+
+nav .fa {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 14px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 0px;
+    font-size: 1rem;
+    color: #54667a;
+}
+
+a:hover {
+    background: #eee;
+    color: #533fd0;
+}
+
+.logout {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.logout .fa-solid {
+    width: 70px;
+}
+
+.logout .fa {
+    width: 70px;
+}
+
+.b-icon {
+    width: 0;
+}
+
+hr {
+    margin: 5px 0px;
+}
+
+.logo i {
+    color: #a6b7bf;
+}
