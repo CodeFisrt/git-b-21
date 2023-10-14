@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: #a6b7bf;
+}
+
+
+::-webkit-scrollbar {
+    height: 4px;
+    width: 7px;
+    right: 0;
+}
+
+
+::-webkit-scrollbar-thumb:vertical {
+    background: gray;
+    border-radius: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo-heading{
+    color: #54667a;
+    font-weight: 200;
+}
+.scrollable-bar {
+    position: relative;
+    bottom: 0;
+    height: 100vh;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile {
+    font-size: 1rem;
+    color: #54667a;
+    font-weight: 300;
+}
+
+.profile button {
+    font-size: 1rem;
+    color: #54667a;
+    font-weight: 300;
+}
+
+.profile-links {
+    position: relative;
+    display: table;
+    width: 100%;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.profile-links.fa {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.profile-links .nav-item {
+    margin-left: 10px;
+}
+
+.logo hr {
+    margin: 5px 0px;
+}
+
+.sidebar-main-links {
+    position: relative;
+    display: table;
+    width: 100%;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.sidebar-main-links .fa {
+    position: relative;
+    top: 14px;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.sidebar-main-links .nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 0px;
+    font-size: 1rem;
+    color: #54667a;
+}
+
+.sub-items {
+    position: relative;
+    display: table;
+    width: 100%;
+    font-weight: 300;
+    padding: 20px 10px;
+}
+
+.sub-items .fa {
+    position: relative;
+    width: 40px;
+    text-align: center;
+    color: #a6b7bf;
+}
+
+.sub-items button {
+    padding: 0;
+    color: #54667a;
+}
+
+.sidebar-sub-links {
+    position: relative;
+    top: 12px;
+    font-size: 1rem;
+}
+
+.sidebar-sub-links a {
+    color: #54667a;
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+.bottom-links-div {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-main-links {
+    position: relative;
+    display: table;
+    width: 100%;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.bottom-main-links .fa {
+    position: relative;
+    top: 14px;
+    width: 57px;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.sub-items .fa-chevron-right {
+    padding-left: 40px;
+    color: #a6b7bf;
+}
+.top-navbar{
+    position: relative;
+    padding: 22px;
+    background-image: linear-gradient(to right, #533fd0, #840fb5);
+    color: #a6b7bf;
+}
+.top-navbar img{
+    width: 30px;
+    border-radius: 50px;
+}
+
+.sidebar-main-links:hover {
+    color: #533fd0;
+    background: #eee;
+}
+
+.footer-box{
+    position: relative;
+    top: 518px;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+    color: #54667a;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 17px 15px;
+}
+
+.profile-links:hover {
+    color: #533fd0;
+    background: #eee;
+}
+
+.sub-items:hover {
+    color: #533fd0;
+    background: #eee;
+}
+
+.bottom-main-links:hover {
+    color: #533fd0;
+    background: #eee;
+}
+
+.sidebar-sub-links a:hover {
+    color: #533fd0;
+    background: #fff;
+}
