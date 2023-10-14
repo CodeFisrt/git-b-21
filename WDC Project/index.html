@@ -1,0 +1,382 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="https://getbootstrap.com//docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://getbootstrap.com//docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://getbootstrap.com//docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com//docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com//docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="https://getbootstrap.com//docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none; 
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sideBar.css">
+
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <!-- <div class="container-fluid">
+        <div class="row">
+         <div class="col-2 border-bottom p-0">
+                 <h5 class="header-heading text-center m-0">School of WDC</h5>
+         </div>
+         <div class="col-10 p-0">
+             <nav class="navbar ">
+                 <ul class="list-unstyled m-0">
+                     <li><i class="fa-solid fa-arrow-left"></i></li>
+                 </ul>
+                 <ul class="d-flex list-unstyled m-0">
+                     <li class="px-3"><a href="#"><img src="images/img-1.jpg" alt=""></a></li>
+                     <li class="px-3"><a href="#"><i class="fa fa-language"></i></a></li>
+                     <li class="px-3"><a href="#"><i class="fa fa-power-off"></i></a></li>
+                     <li class="px-3"><a href="#"><i class="fa-solid fa-border-all"></i></a></li>
+                 </ul>
+             </nav>
+         </div>
+        </div>
+     </div> -->
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+      
+        <div class="logo py-2">
+            <img src="images/img-1.jpg" alt="">
+                <div class="dropdown">
+                  <button class="border border-0 bg-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span>Brittany Babotts</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">
+                      <i class="fa-solid fa-wallet"></i>
+                      <span class="nav-item">My Invoice</span>
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      <i class="fa-solid fa-message"></i>
+                      <span class="nav-item">Messages</span>
+                    </a></li><hr>
+                    <li><a class="dropdown-item" href="#">
+                      <i class="fa-solid fa-gear"></i>
+                      <span class="nav-item">Account Setting</span>
+                    </a></li><hr>
+                    <li><a class="dropdown-item" href="#">
+                      <i class="fa fa-power-off"></i>
+                      <span class="nav-item">Logout</span>
+                    </a></li>
+                  </ul>
+                </div>
+      </div>  
+      <ul class="list-unstyled">
+          <li>
+              <a href="">
+                  <i class="fa-solid fa-gauge-high"></i>
+                  <span class="nav-item">Dashboard</span>
+              </a>
+          </li>
+          <li>
+              <a href="">
+                  <i class="fa-solid fa-book-bookmark"></i>
+                  <span class="nav-item">Welcome Office</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-book-bookmark"></i>
+                  <span class="nav-item">static Pages</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-video"></i>
+                  <span class="nav-item">Online Meating</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-message"></i>
+                  <span class="nav-item">Messages</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <span class="nav-item">Mail/SMS</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="nav-item">Mobile Notification</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span class="nav-item">Calender</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-clock"></i>
+                  <span class="nav-item">Classes Schedual</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-list-check"></i>
+                  <span class="nav-item">Attendance</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-check"></i>
+                  <span class="nav-item">Staff Attendance</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-plane"></i>
+                  <span class="nav-item">Vacation</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-book-open-reader"></i>
+                  <span class="nav-item">Library</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-photo-film"></i>
+                  <span class="nav-item">Media Center</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span class="nav-item">Employees</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-users"></i>
+                  <span class="nav-item">Students</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-user-group"></i>
+                  <span class="nav-item">Parents</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-box"></i>
+                  <span class="nav-item">Grade Level</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                  <span class="nav-item">Study Material</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-file"></i>
+                  <span class="nav-item">Assignments</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-list-check"></i>
+                  <span class="nav-item">Exam Lists</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-network-wired"></i>
+                  <span class="nav-item">Online Exams</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-newspaper"></i>
+                  <span class="nav-item">News Boards</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-regular fa-calendar-plus"></i>
+                  <span class="nav-item">Events</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <span class="nav-item">My Payroll</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <span class="nav-item">Payroll</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <span class="nav-item">Accountng</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <span class="nav-item">Expenses</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-money-bill-1"></i>
+                  <span class="nav-item">Income</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-network-wired"></i>
+                  <span class="nav-item">Inventory</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-network-wired"></i>
+                  <span class="nav-item">Classes</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-book-open-reader"></i>
+                  <span class="nav-item">Subjects</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-hotel"></i>
+                  <span class="nav-item">Hostel Managements</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-train-subway"></i>
+                  <span class="nav-item">Transportation</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-certificate"></i>
+                  <span class="nav-item">Certificates</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-id-card-clip"></i>
+                  <span class="nav-item">Id Cards</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <span class="nav-item">Reports</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-file"></i>
+                  <span class="nav-item">Frontend CMS</span>
+              </a>
+          </li>
+          <li>
+              <a href="#">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="nav-item">Administrative Tasks</span>
+              </a>
+          </li>
+          <li class="py-2">
+              <a href="#">
+                  <i class=""></i>
+                  <span class="nav-item"></span>
+              </a>
+          </li>
+          <li>
+              <ul class="bottom-icon logout list-unstyled d-flex border-top">
+                  <li><a href="" class="b-icon p-2">
+                          <i class="fa-solid fa-gear"></i>
+                      </a>
+                  </li>
+                  <li><a href="" class="b-icon p-2">
+                          <i class="fa-solid fa-envelope"></i>
+                      </a>
+                  </li>
+                  <li><a href="" class="b-icon p-2">
+                          <i class="fa fa-power-off"></i>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+       
+       
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      content
+      
+    </main>
+  </div>
+</div>
+
+
+    <script src="https://getbootstrap.com//docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <script src="https://getbootstrap.com/https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+  </body>
+</html>

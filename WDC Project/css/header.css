@@ -1,13 +1,13 @@
-img {
+/* img {
     width: 30px;
     border-radius: 50px;
-}
+} */
 
-.navbar {
+/* .navbar {
     padding: 20px;
     background-image: linear-gradient(to right, #533fd0, #840fb5);
     color: #a6b7bf;
-}
+} */
 
 .header-heading{
     color: #54667a;
@@ -16,11 +16,11 @@ img {
     padding-top: 22px;
 }
 
-a {
+/* a {
     color: #a6b7bf;
     font-weight: 300;
 }
 
 a :hover {
     color: #fff;
-}
+} */

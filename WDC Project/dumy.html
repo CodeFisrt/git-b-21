@@ -2,84 +2,381 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style>
-    a {
-      position: relative;
-      display: table;
-      width: 280px;
-      padding: 10px;
-      text-decoration: none;
-      color: #a6b7bf;
-      font-weight: 300;
-    }
-
-    nav .fa,
-    .fa-solid,
-    .fa-regular {
-      position: relative;
-      width: 70px;
-      height: 40px;
-      top: 14px;
-      font-size: 17px;
-      text-align: center;
-    }
-
-    .nav-item {
-      position: relative;
-      top: 12px;
-      margin-left: 0px;
-      font-size: 1rem;
-      color: #54667a;
-    }
-
-    a:hover {
-      background: #eee;
-      color: #533fd0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School of WDC | Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <div class="accordion" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Accordion Item #1
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul class="list-unstyled">
-                  <li>
-                   <a href="#">
-                    <span class="nav-item">Accountng</span>
-                   </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                        <span class="nav-item">Expenses</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <div class="sidebar bg-white shadow">
+                        <h5 class="logo-heading text-center m-4">School of WDC</h5>
+                        <hr>
+                        <nav class="scrollable-bar">
+                            <div class="logo">
+                                <img src="images/img-1.jpg" alt="" class="logo-img">
+                                <div class="profile dropdown">
+                                    <button class="border border-0 dropdown-toggle bg-white" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Brittany Babotts
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-wallet"></i>
+                                                <span class="nav-item">My Invoice</span>
+                                            </a></li>
+                                        <li><a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-message"></i>
+                                                <span class="nav-item">Messages</span>
+                                            </a></li>
+                                        <hr>
+                                        <li><a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-gear"></i>
+                                                <span class="nav-item">Account Setting</span>
+                                            </a></li>
+                                        <hr>
+                                        <li><a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-power-off"></i>
+                                                <span class="nav-item">Logout</span>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-gauge-high"></i>
+                                        <span class="nav-item">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sub-items">
+                                    <i class="fa fa-solid fa-book-bookmark"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#orders-collapse"
+                                        aria-expanded="false">
+                                        Welcome Office
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+
+                                    <div class="collapse" id="orders-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Visitors</a>
+                                            </li>
+                                            <li class="sidebar-sub-links"><a href="#">Phone Cell</a>
+                                            </li>
+                                            <li class="sidebar-sub-links"><a href="#">Postal</a>
+                                            </li>
+                                            <li class="sidebar-sub-links"><a href="#">Content Message</a>
+                                            </li>
+                                            <li class="sidebar-sub-links"><a href="#">Enquiries</a>
+                                            </li>
+                                            <li class="sidebar-sub-links"><a href="#">Complaints</a>
+                                            </li>
+                                            <li class="sidebar-sub-links"><a href="#">Office Categiries</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sub-items">
+                                    <i class="fa fa-solid fa-book-bookmark"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#orders-collapse"
+                                        aria-expanded="false">
+                                        Static Pages
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                    <div class="collapse" id="orders-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Control Pages</a>
+                                            </li>
+                                            <li class="sidebar-sub-links"><a href="#">School Module</a>
+                                            </li>
+                                            <li class="sidebar-sub-links"><a href="#">School Dashboard</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-video"></i>
+                                        <span class="nav-item">Online Meating</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-message"></i>
+                                        <span class="nav-item">Messages</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-mobile-screen-button"></i>
+                                        <span class="nav-item">Mail/SMS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-bell"></i>
+                                        <span class="nav-item">Mobile Notification</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-regular fa-calendar-days"></i>
+                                        <span class="nav-item">Calender</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-clock"></i>
+                                        <span class="nav-item">Classes Schedual</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-list-check"></i>
+                                        <span class="nav-item">Attendance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-check"></i>
+                                        <span class="nav-item">Staff Attendance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-plane"></i>
+                                        <span class="nav-item">Vacation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-book-open-reader"></i>
+                                        <span class="nav-item">Library</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-photo-film"></i>
+                                        <span class="nav-item">Media Center</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-briefcase"></i>
+                                        <span class="nav-item">Employees</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-users"></i>
+                                        <span class="nav-item">Students</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-user-group"></i>
+                                        <span class="nav-item">Parents</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-box"></i>
+                                        <span class="nav-item">Grade Level</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-cloud-arrow-up"></i>
+                                        <span class="nav-item">Study Material</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-file"></i>
+                                        <span class="nav-item">Assignments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-list-check"></i>
+                                        <span class="nav-item">Exam Lists</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-network-wired"></i>
+                                        <span class="nav-item">Online Exams</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-newspaper"></i>
+                                        <span class="nav-item">News Boards</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-regular fa-calendar-plus"></i>
+                                        <span class="nav-item">Events</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-building-columns"></i>
+                                        <span class="nav-item">My Payroll</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-building-columns"></i>
+                                        <span class="nav-item">Payroll</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-dollar-sign"></i>
+                                        <span class="nav-item">Accountng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-dollar-sign"></i>
+                                        <span class="nav-item">Expenses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-money-bill-1"></i>
+                                        <span class="nav-item">Income</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-network-wired"></i>
+                                        <span class="nav-item">Inventory</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-network-wired"></i>
+                                        <span class="nav-item">Classes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-book-open-reader"></i>
+                                        <span class="nav-item">Subjects</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-hotel"></i>
+                                        <span class="nav-item">Hostel Managements</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-train-subway"></i>
+                                        <span class="nav-item">Transportation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-certificate"></i>
+                                        <span class="nav-item">Certificates</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-id-card-clip"></i>
+                                        <span class="nav-item">Id Cards</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-chart-line"></i>
+                                        <span class="nav-item">Reports</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-file"></i>
+                                        <span class="nav-item">Frontend CMS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-gear"></i>
+                                        <span class="nav-item">Administrative Tasks</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sidebar-main-links m-4">
+                                        <span class="nav-item"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <ul class="bottom-links-div list-unstyled d-flex border-top">
+                                        <li><a href="#" class="bottom-main-links p-2">
+                                                <i class="fa fa-solid fa-gear"></i>
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="bottom-main-links p-2">
+                                                <i class="fa fa-solid fa-envelope"></i>
+                                            </a>
+                                        </li>
+                                        <li><a href="#" class="bottom-main-links p-2">
+                                                <i class="fa fa-power-off"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-10 p-0">
+                    <header class="">
+                        <nav class="navbar top-navbar">
+                            <ul class="list-unstyled m-0">
+                                <li><i class="fa-solid fa-arrow-left"></i></li>
+                            </ul>
+                            <ul class="d-flex list-unstyled m-0">
+                                <li class="px-3"><a href="#"><img src="images/img-1.jpg""></a></li>
+                                <li class="px-3"><a href="#"><i class="fa fa-language"></i></a></li>
+                                <li class="px-3"><a href="#"><i class="fa fa-power-off"></i></a></li>
+                                <li class="px-3"><a href="#"><i class="fa-solid fa-border-all"></i></a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+                <div class="col-10 offset-2 p-0">
+                    <footer>
+                        <div class="footer-box border bg-white">
+                            All Rights Reserved. <a href="#" class="text-decoration-none text-primary">- School Terms</a>
+                        </div>
+                    </div>
+                    </footer>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
