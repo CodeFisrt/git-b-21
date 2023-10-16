@@ -174,7 +174,8 @@ a {
 }
 
 .sub-items .fa-chevron-right {
-    padding-left: 40px;
+    position: relative;
+    right: px;
     color: #a6b7bf;
 }
 .top-navbar{
@@ -186,6 +187,10 @@ a {
 .top-navbar img{
     width: 30px;
     border-radius: 50px;
+}
+
+.sidebar-list{
+    margin-bottom: 150px;
 }
 
 .sidebar-main-links:hover {
