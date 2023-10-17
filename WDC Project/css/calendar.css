@@ -1,0 +1,29 @@
+/* start calendar page css by Esha */
+th {
+    text-align: center;
+}
+tr {
+    text-align: right;
+    font-size: 12px;
+}
+td {
+    border: 1px solid #EEEEEE;
+    padding-bottom: 120px;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+.calendar-nav {    
+    justify-content: space-between;
+}
+.calendar-data-header {
+    justify-content: center;
+}
+table {
+    width: 100%;
+}
+span {
+    font-weight: normal;
+}
+/* end calendar page css by Esha */

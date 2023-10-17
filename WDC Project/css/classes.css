@@ -1,0 +1,33 @@
+/* start css of classes schedule Page by Esha */
+body {
+    background-color: #F2F7F8;
+}
+.text {
+    color: #7460EE;
+}
+.card-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search-icon {
+    position: relative;
+    right: 4px;
+    background-color: #EBEEEF;
+    padding: 6px;
+}
+.input-div {
+    border: 1px solid #D9D9D9;
+    outline-color: #5CB3FD;
+    padding: 2px;
+}
+.btn-size {
+    border-radius: 100%;
+    background-color:#009efb;
+}
+.fa-th-list {
+    color: white;
+}
+.align-div {
+    text-align: left;
+}
+/* end css of classes schedule Page by Esha */

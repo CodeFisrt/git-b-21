@@ -11,7 +11,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/online_exam.css">
 </head>
 
 <body>
@@ -607,8 +607,81 @@
                 </div>
                 <div class="col-10 offset-2">
                     <!-- Page Content -->
-                    <h1>Content goes here</h1>                    
+<!-- start online Exam page -->
+<div class="online-exam-wrap">
+    <section>
+        <div class="container-fluid">
+            <!-- start heading row -->
+            <div class="row p-3">
+                <div class="col-md-12">
+                    <h3 class="m-b-0 m-t-0">Online Exams</h3>
                 </div>
+            </div>
+            <!-- end heading row -->
+            <!-- start online content row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card p-3">
+                        <div class="online-card-wrap d-flex online-card-container">
+                            <div class="list-exam">
+                                <h4>List exams</h4>
+                            </div>
+                            <div class="online-btn-div">
+                                <input type="text" placeholder="Search" class="online-input-div">                            
+                                <i class="fa fa-search online-search-icon"></i>
+                                <button class="btn btn-success">Add exam</button>
+                                <button type="button" class="btn btn-success"><i class="fa fa-question"></i> Questions Bank</button>
+                            </div>    
+                        </div>
+                        <!-- start online table -->
+                        <div class="table-responsive p-3">
+                            <table class="table table-bordered table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Exam Name</th>
+                                        <th>Exam Description</th>
+                                        <th>Exam Deadline</th>
+                                        <th>Operations</th>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>exam 2</td>
+                                        <td>exam 2 description</td>
+                                        <td>26/01/2025</td>
+                                        <td>
+                                            <button type="button" class="btn btn-success online-btn-size" title="Take exam"><i class="fa fa-list-alt"></i></button>
+                                            <button type="button" class="btn btn-success online-btn-size-check" title="Show marks"><i class="fa-regular fa-square-check"></i></button>
+                                            <button type="button" class="btn btn-success online-btn-size" title="Edit"><i class="fa fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-danger online-btn-size-check-trash" title="Remove"><i class="fa-regular fa-trash-can"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>                           
+                                        <td>7</td>
+                                        <td>Physics Exam</td>
+                                        <td>Physics Quiz</td>
+                                        <td>03/08/2022</td>
+                                        <td>
+                                            <button type="button" class="btn btn-success online-btn-size" title="Take exam"><i class="fa fa-list-alt"></i></button>
+                                            <button type="button" class="btn btn-success online-btn-size-check" title="Show marks"><i class="fa-regular fa-square-check"></i></button>
+                                            <button type="button" class="btn btn-success online-btn-size" title="Edit"><i class="fa fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-danger online-btn-size-check-trash" title="Remove"><i class="fa-regular fa-trash-can"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>    
+                        <!-- end online table -->
+                    </div>
+                </div>
+            </div>
+            <!-- end online content row -->
+        </div>
+    </section>
+</div>
+
+<!-- end online Exam page -->                </div>
                 <div class="col-10 offset-2 p-0">
                     <footer>
                         <div class="footer-box border bg-white">
