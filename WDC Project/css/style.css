@@ -5,7 +5,7 @@
 }
 
 body {
-    background: lightgray;
+    background: #f2f7f8;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -13,11 +13,15 @@ a {
     text-decoration: none;
 }
 
-.same-icon-color{
+.same-icon-color {
     color: #a6b7bf;
 }
 
-.diff-icon-color{
+.diff-icon-color {
+    color: #54667a;
+}
+
+.primary-color {
     color: #54667a;
 }
 
@@ -33,15 +37,37 @@ a {
     border-radius: 10px;
 }
 
-.sidebar{
+/* Login Page - start */
+
+.login-page {
+    background-image: url(../images/login_image.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.resistration-form {
+    width: 100%;
+    height: 100%;
+    padding: 10% 33%;
+}
+
+.login-box {
+    width: 400px;
+}
+
+/* Login Page - end */
+
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
 }
-.logo-heading{
+
+.logo-heading {
     color: #54667a;
     font-size: 1.25rem;
 }
+
 .scrollable-bar {
     bottom: 0;
     height: 100vh;
@@ -87,7 +113,7 @@ a {
     margin: 0 11px;
 }
 
-.nav-item{
+.nav-item {
     color: #54667a;
     letter-spacing: 0.5px;
 }
@@ -117,7 +143,7 @@ a {
     left: 0;
 }
 
-.bottom-main-links{
+.bottom-main-links {
     padding: 15px 0;
 }
 
@@ -131,20 +157,27 @@ a {
     float: right;
     padding-top: 5px;
 }
-.top-navbar{
+
+.top-navbar {
     padding: 22px;
     background-image: linear-gradient(to right, #533fd0, #840fb5);
 }
-.top-navbar img{
+
+.top-navbar img {
     width: 30px;
     border-radius: 50px;
 }
 
-.sidebar-list{
+.sidebar-list {
     margin-bottom: 150px;
 }
 
-.footer-box{
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.footer-box {
     overflow-x: hidden;
     color: #54667a;
     font-weight: 300;
@@ -154,17 +187,19 @@ a {
 
 .sidebar-main-item:hover {
     background: #eee;
-    color: #54667a;;
+    color: #54667a;
+    ;
 }
 
-.sidebar-main-links :hover{
+.sidebar-main-links :hover {
     color: #533fd0;
     background: #eee;
 }
 
-.slider-both-items :hover{
+.slider-both-items :hover {
     color: #533fd0;
 }
+
 .profile-links:hover {
     color: #533fd0;
     background: #eee;
@@ -175,3 +210,374 @@ a {
     background: #eee;
 }
 
+.items-heading {
+    font-size: 22px;
+    color: #7460ee !important;
+}
+
+/* Dasboard - Start */
+.main-heading {
+    color: #533fd0;
+}
+
+.user-info {
+    padding: 20px;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.main-heading {
+    color: #533fd0;
+}
+
+.user-info {
+    padding: 20px;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.user-info-item small {
+    font-size: 14px;
+}
+
+.user-info-button button {
+    width: 90%;
+    margin: 10px 20px;
+}
+
+.leaderboard-navbar {
+    position: relative;
+    height: 300px;
+    overflow-x: hidden;
+}
+
+.leaderboard-navbar small {
+    font-size: 12px;
+}
+
+.student-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.birthday-block {
+    position: relative;
+    width: auto;
+    height: 410px;
+}
+
+.links-button a {
+    width: 100%;
+}
+
+
+
+.invoice-normal-chart {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.invoice-normal-chart td {
+    color: #54667a;
+    letter-spacing: 0.7px;
+    padding: 9px;
+}
+
+.statous-btn {
+    font-size: 75%;
+    padding: 2px 10px;
+}
+
+.invoice-barchart {
+    width: 360px;
+    height: 476px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.slimScrollDiv {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 300px;
+}
+
+.news-btn {
+    width: 90px;
+}
+
+.message-navbar {
+    position: relative;
+    height: 320px;
+    overflow-x: hidden;
+}
+
+.message-navbar small {
+    font-size: 12px;
+}
+
+.meeting-block {
+    height: 380px;
+}
+
+.calendar {
+    position: relative;
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    height: 360px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+
+.calendar .calendar-inner .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 20px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div>a {
+    color: var(--calendar-font-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .calendar-inner .calendar-body div:hover {
+    border: 1px solid var(--calendar-date-hover-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .calendar-inner .calendar-today-date {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px 0px;
+    background: var(--calendar-current-date-color);
+    padding: 8px 0px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+    background: var(--calendar-today-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today a {
+    outline: 2px solid var(--calendar-today-innerborder-color);
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+    color: var(--calendar-font-color);
+    font-family: arial, consolas, sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: inline-block;
+    background: var(--calendar-nextprev-bg-color);
+    margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path {
+    fill: var(--next-prev-arrow-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates,
+.calendar .calendar-inner .calendar-body .next-dates {
+    color: var(--calendar-prevnext-date-color);
+}
+
+/* Dasboard - End */
+
+/* Administrative Task - Start */
+
+.top-items-heading h5 {
+    font-size: 18px;
+}
+
+.top-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group-addon {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #464a4c;
+    text-align: center;
+    background-color: #eceeef;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+}
+
+.academic-year-table button {
+    border-radius: 100%;
+}
+
+.academic-year-table i {
+    font-size: 13px;
+}
+
+.academic-year-table th {
+    color: #54667a;
+    letter-spacing: 0.5px;
+}
+
+.academic-year-table td {
+    color: #54667a;
+    letter-spacing: 0.5px;
+}
+
+.academic-year-table img {
+    height: 40px;
+    border-radius: 100%;
+}
+
+.dbExport-btn button {
+    padding: 15px 90px 15px 10px;
+}
+
+/* Administrative Task  - End */
+
+/* Employee , Mypayroll,payroll start */
+
+.user-img {
+    width: 35px;
+    height: 35px;
+}
+
+
+.tbl {
+    border: 1px solid #eceeef;
+}
+
+.table thead th {
+    border: 0px;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.btn-circle {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.table td,
+.table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+
+.circle {
+    width: 43px;
+    height: 43px;
+    background-color: green;
+   
+    margin: 0px;
+    font-size: 16px;
+}
+/* Employee , Mypayroll,payroll  end */
+
+/* Report start */
+.icons {
+     padding-top: 10px;
+    text-align: center;
+    
+}
+.card{
+    border: none;
+}
+h5{
+    font-size: 16px;
+}
+/* Report end */
+.add-heading-color {
+    color: #a94442;
+}
+
+.add-input-border {
+    border-color: #a94442;
+}
+
+.add-items-color {
+    color: #54667a;
+}
+
+/* Administrative Task  - End */
