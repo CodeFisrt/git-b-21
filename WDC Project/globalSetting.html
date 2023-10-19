@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School of WDC | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <div class="sidebar bg-white shadow">
+                        <h5 class="logo-heading text-center m-4">School of WDC</h5>
+                        <hr>
+                        <nav class="scrollable-bar">
+                            <div class="logo">
+                                <div class="logo-img-wrap">
+                                    <img src="images/img-1.jpg" alt="" class="logo-img">
+                                </div>
+                                <div class="profile dropdown">
+                                    <button class="border border-0 dropdown-toggle bg-white" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Brittany Babotts
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="profile-menu">
+                                            <a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-wallet diff-icon-color"></i>
+                                                <span class="nav-item">My Invoice</span>
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu">
+                                            <a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-message diff-icon-color"></i>
+                                                <span class="nav-item">Messages</span>
+                                            </a>
+                                        </li>
+                                        <hr>
+                                        <li class="profile-menu">
+                                            <a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-gear diff-icon-color"></i>
+                                                <span class="nav-item">Account Setting</span>
+                                            </a>
+                                        </li>
+                                        <hr>
+                                        <li class="profile-menu">
+                                            <a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-power-off diff-icon-color"></i>
+                                                <span class="nav-item">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="sidebar-list list-unstyled">
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-gauge-high same-icon-color"></i>
+                                        <span class="nav-item">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-book-bookmark same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#office-collapse"
+                                        aria-expanded="false">
+                                        Welcome Office
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+
+                                    <div class="collapse" id="office-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Visitors</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Phone Cell</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Postal</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Content Message</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Enquiries</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Complaints</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Office Categiries</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-book-bookmark same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#pages-collapse"
+                                        aria-expanded="false">
+                                        Static Pages
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="pages-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Control Pages</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">School Module</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">School Dashboard</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-video same-icon-color"></i>
+                                        <span class="nav-item">Online Meating</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-message same-icon-color"></i>
+                                        <span class="nav-item">Messages</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-mobile-screen-button same-icon-color"></i>
+                                        <span class="nav-item">Mail/SMS</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-bell same-icon-color"></i>
+                                        <span class="nav-item">Mobile Notification</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-regular fa-calendar-days same-icon-color"></i>
+                                        <span class="nav-item">Calender</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-clock same-icon-color"></i>
+                                        <span class="nav-item">Classes Schedual</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-list-check same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#attendance-collapse"
+                                        aria-expanded="false">
+                                        Attendance
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="attendance-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Take Attendance</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Attendance Report</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-check same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#staff-collapse"
+                                        aria-expanded="false">
+                                        Staff Attendance
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="staff-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Take Attendance</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Attendance Report</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-plane same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#vacation-collapse"
+                                        aria-expanded="false">
+                                        Vacation
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="vacation-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Request Vacation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Approve Vacation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">My Vacation</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-book-open-reader same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#library-collapse"
+                                        aria-expanded="false">
+                                        Library
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="library-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Issue Book</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Return Book</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">List Book</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Manage Subscription</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-photo-film same-icon-color"></i>
+                                        <span class="nav-item">Media Center</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <i class="fa fa-solid fa-briefcase same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#employees-collapse"
+                                        aria-expanded="false">
+                                        Employees
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="employees-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="employee.html">Employees</a></li>
+                                            <li class="sidebar-sub-links"><a href="teacher.html">Teachers</a></li>
+                                            <li class="sidebar-sub-links"><a href="departments.html">Departments</a></li>
+                                            <li class="sidebar-sub-links"><a href="designation.html">Designation</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-users same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#students-collapse"
+                                        aria-expanded="false">
+                                        Students
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="students-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Students</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Students Admission</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Students Categiries</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-user-group same-icon-color"></i>
+                                        <span class="nav-item">Parents</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-box same-icon-color"></i>
+                                        <span class="nav-item">Grade Level</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-cloud-arrow-up same-icon-color"></i>
+                                        <span class="nav-item">Study Material</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-file same-icon-color"></i>
+                                        <span class="nav-item">Assignments</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-list-check same-icon-color"></i>
+                                        <span class="nav-item">Exam Lists</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-network-wired same-icon-color"></i>
+                                        <span class="nav-item">Online Exams</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-newspaper same-icon-color "></i>
+                                        <span class="nav-item">News Boards</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-regular fa-calendar-plus same-icon-color"></i>
+                                        <span class="nav-item">Events</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="my-payroll.html" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-building-columns same-icon-color"></i>
+                                        <span class="nav-item">My Payroll</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-building-columns same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#payrool-collapse"
+                                        aria-expanded="false">
+                                        Payrool
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="payrool-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="make-payment.html">Make Payment</a></li>
+                                            <li class="sidebar-sub-links"><a href="user-salary.html">User Salary</a></li>
+                                            <li class="sidebar-sub-links"><a href="salary-base.html">Salary Base</a></li>
+                                            <li class="sidebar-sub-links"><a href="hourly-base.html">Hourly Base</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-dollar-sign same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#accounting-collapse"
+                                        aria-expanded="false">
+                                        Accounting
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="accounting-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Invoices</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Due Invoices</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Free Groups</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Free Types</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Free Allocation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Free Discount</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-dollar-sign same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#expenses-collapse"
+                                        aria-expanded="false">
+                                        Expenses
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="expenses-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Expenses</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Expenses Categories</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-money-bill-1 same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#income-collapse"
+                                        aria-expanded="false">
+                                        Income
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="income-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Income</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Income Categories</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-network-wired same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#inventary-collapse"
+                                        aria-expanded="false">
+                                        Inventary
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="inventary-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Issue/Return</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Items Stock</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Inventary Categiries</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Suppliers</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Stores</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Item Coding</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-network-wired same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#classes-collapse"
+                                        aria-expanded="false">
+                                        Classes
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="classes-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Classes</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Section</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-book-open-reader same-icon-color"></i>
+                                        <span class="nav-item">Subjects</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-hotel same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#hostel-collapse"
+                                        aria-expanded="false">
+                                        Hostel Managements
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="hostel-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Hostel</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Hostel Categiries</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-train-subway same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#transportation-collapse"
+                                        aria-expanded="false">
+                                        Transportation
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="transportation-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Transportation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Transport Vehical</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Members</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-certificate same-icon-color"></i>
+                                        <span class="nav-item">Certificates</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-id-card-clip same-icon-color"></i>
+                                        <span class="nav-item">Id Cards</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="reports.html" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-chart-line same-icon-color"></i>
+                                        <span class="nav-item">Reports</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-file same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#frontend-collapse"
+                                        aria-expanded="false">
+                                        Frontend CMS
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="frontend-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Control Pages</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Frontend CMS Settings</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-gear same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#administrative-collapse"
+                                        aria-expanded="false">
+                                        Administrative Tasks
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="administrative-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Acadmic Years</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Promotions</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Mail/SMS Templates</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Polls</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Dormitories</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">General Settings</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Languages</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Administrators</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Permission Roles</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">School Terms</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">DB Exports</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <ul class="bottom-links-div list-unstyled d-flex border-top">
+                                        <li class="bottom-main-links">
+                                            <a href="#" class="p-2">
+                                                <i class="fa fa-solid fa-gear diff-icon-color"></i>
+                                            </a>
+                                        </li>
+                                        <li class="bottom-main-links">
+                                            <a href="#" class="p-2">
+                                                <i class="fa fa-solid fa-envelope diff-icon-color"></i>
+                                            </a>
+                                        </li>
+                                        <li class="bottom-main-links">
+                                            <a href="#" class="p-2">
+                                                <i class="fa fa-power-off diff-icon-color"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <header class="">
+                        <nav class="navbar top-navbar">
+                            <ul class="list-unstyled m-0">
+                                <li><a href="#"><i class="fa-solid fa-arrow-left same-icon-color"></i></a></i></li>
+                            </ul>
+                            <ul class="d-flex list-unstyled m-0">
+                                <li class="px-3"><a href="#"><img src="images/img-1.jpg"></a></li>
+                                <li class="px-3"><a href="#"><i class="fa fa-language same-icon-color"></i></a></li>
+                                <li class="px-3"><a href="#"><i class="fa fa-power-off same-icon-color"></i></a></li>
+                                <li class="px-3"><a href="#"><i class="fa-solid fa-border-all same-icon-color"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+                <div class="col-10 offset-2 px-4">
+                    <div class="acadmic-year-box">
+                        <h3 class="items-heading py-4 m-0 fw-normal">Administrative tasks</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card bg-white border-0">
+                                    <div class="card-block p-4">
+                                        <div class="list-group">
+                                            <a class="list-group-item active py-3" href="#">Global Settings</a>
+                                            <a class="list-group-item py-3 text-primary" href="#" >Activated Modules</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Payments Settings</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Mail / SMS Settings</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Vacation Settings</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Mobile application</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">frontend CMS</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Biometric Integration</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Zoom Integration</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Look &amp; Feel</a>
+                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card border-0">
+                                    <div class="card-block p-4">
+                                        <form class="form-horizontal">
+                                            <div class="global-setting-box">
+                                                <h4 class="fw-normal">Global Settings</h4>
+                                                <br>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Site title * </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Site title">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Default language</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select primary-color">
+                                                            <option value="1">English</option>
+                                                            <option value="2">Arabic</option>
+                                                            <option value="3">French</option>
+                                                            <option value="4">Dutch</option>
+                                                            <option value="5">German</option>
+                                                            <option value="6">Hindi</option>
+                                                            <option value="7">Italian</option>
+                                                            <option value="8">Turkish</option>
+                                                            <option value="9">Russian</option>
+                                                            <option value="10">Spanish</option>
+                                                            <option value="11">Portuguse</option>
+                                                            <option value="12">Bengali</option>
+                                                            <option value="13">Chineese</option>
+                                                            <option value="14">Indonesian</option>
+                                                            <option value="15">Romanian</option>
+                                                            <option value="16">Thai</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Allow users change languages</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio" checked="checked">
+                                                                Allowed
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Not allowed
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Country</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select primary-color" name="country">
+                                                            <option value="AF">Afghanistan</option>
+                                                            <option value="AX">Åland Islands</option>
+                                                            <option value="AL">Albania</option>
+                                                            <option value="DZ">Algeria</option>
+                                                            <option value="AS">American Samoa</option>
+                                                            <option value="AD">Andorra</option>
+                                                            <option value="AO">Angola</option>
+                                                            <option value="AI">Anguilla</option>
+                                                            <option value="AQ">Antarctica</option>
+                                                            <option value="AG">Antigua and Barbuda</option>
+                                                            <option value="AR">Argentina</option>
+                                                            <option value="AM">Armenia</option>
+                                                            <option value="AW">Aruba</option>
+                                                            <option value="AU">Australia</option>
+                                                            <option value="AT">Austria</option>
+                                                            <option value="AZ">Azerbaijan</option>
+                                                            <option value="BS">Bahamas</option>
+                                                            <option value="BH">Bahrain</option>
+                                                            <option value="BD">Bangladesh</option>
+                                                            <option value="BB">Barbados</option>
+                                                            <option value="BY">Belarus</option>
+                                                            <option value="BE">Belgium</option>
+                                                            <option value="BZ">Belize</option>
+                                                            <option value="BJ">Benin</option>
+                                                            <option value="BM">Bermuda</option>
+                                                            <option value="BT">Bhutan</option>
+                                                            <option value="BO">Bolivia, Plurinational State of</option>
+                                                            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                                            <option value="BA">Bosnia and Herzegovina</option>
+                                                            <option value="BW">Botswana</option>
+                                                            <option value="BV">Bouvet Island</option>
+                                                            <option value="BR">Brazil</option>
+                                                            <option value="IO">British Indian Ocean Territory</option>
+                                                            <option value="BN">Brunei Darussalam</option>
+                                                            <option value="BG">Bulgaria</option>
+                                                            <option value="BF">Burkina Faso</option>
+                                                            <option value="BI">Burundi</option>
+                                                            <option value="KH">Cambodia</option>
+                                                            <option value="CM">Cameroon</option>
+                                                            <option value="CA">Canada</option>
+                                                            <option value="CV">Cape Verde</option>
+                                                            <option value="KY">Cayman Islands</option>
+                                                            <option value="CF">Central African Republic</option>
+                                                            <option value="TD">Chad</option>
+                                                            <option value="CL">Chile</option>
+                                                            <option value="CN">China</option>
+                                                            <option value="CX">Christmas Island</option>
+                                                            <option value="CC">Cocos (Keeling) Islands</option>
+                                                            <option value="CO">Colombia</option>
+                                                            <option value="KM">Comoros</option>
+                                                            <option value="CG">Congo</option>
+                                                            <option value="CD">Congo, the Democratic Republic of the</option>
+                                                            <option value="CK">Cook Islands</option>
+                                                            <option value="CR">Costa Rica</option>
+                                                            <option value="CI">Côte d'Ivoire</option>
+                                                            <option value="HR">Croatia</option>
+                                                            <option value="CU">Cuba</option>
+                                                            <option value="CW">Curaçao</option>
+                                                            <option value="CY">Cyprus</option>
+                                                            <option value="CZ">Czech Republic</option>
+                                                            <option value="DK">Denmark</option>
+                                                            <option value="DJ">Djibouti</option>
+                                                            <option value="DM">Dominica</option>
+                                                            <option value="DO">Dominican Republic</option>
+                                                            <option value="EC">Ecuador</option>
+                                                            <option value="EG">Egypt</option>
+                                                            <option value="SV">El Salvador</option>
+                                                            <option value="GQ">Equatorial Guinea</option>
+                                                            <option value="ER">Eritrea</option>
+                                                            <option value="EE">Estonia</option>
+                                                            <option value="ET">Ethiopia</option>
+                                                            <option value="FK">Falkland Islands (Malvinas)</option>
+                                                            <option value="FO">Faroe Islands</option>
+                                                            <option value="FJ">Fiji</option>
+                                                            <option value="FI">Finland</option>
+                                                            <option value="FR">France</option>
+                                                            <option value="GF">French Guiana</option>
+                                                            <option value="PF">French Polynesia</option>
+                                                            <option value="TF">French Southern Territories</option>
+                                                            <option value="GA">Gabon</option>
+                                                            <option value="GM">Gambia</option>
+                                                            <option value="GE">Georgia</option>
+                                                            <option value="DE">Germany</option>
+                                                            <option value="GH">Ghana</option>
+                                                            <option value="GI">Gibraltar</option>
+                                                            <option value="GR">Greece</option>
+                                                            <option value="GL">Greenland</option>
+                                                            <option value="GD">Grenada</option>
+                                                            <option value="GP">Guadeloupe</option>
+                                                            <option value="GU">Guam</option>
+                                                            <option value="GT">Guatemala</option>
+                                                            <option value="GG">Guernsey</option>
+                                                            <option value="GN">Guinea</option>
+                                                            <option value="GW">Guinea-Bissau</option>
+                                                            <option value="GY">Guyana</option>
+                                                            <option value="HT">Haiti</option>
+                                                            <option value="HM">Heard Island and McDonald Islands</option>
+                                                            <option value="VA">Holy See (Vatican City State)</option>
+                                                            <option value="HN">Honduras</option>
+                                                            <option value="HK">Hong Kong</option>
+                                                            <option value="HU">Hungary</option>
+                                                            <option value="IS">Iceland</option>
+                                                            <option value="IN">India</option>
+                                                            <option value="ID">Indonesia</option>
+                                                            <option value="IR">Iran, Islamic Republic of</option>
+                                                            <option value="IQ">Iraq</option>
+                                                            <option value="IE">Ireland</option>
+                                                            <option value="IM">Isle of Man</option>
+                                                            <option value="IL">Israel</option>
+                                                            <option value="IT">Italy</option>
+                                                            <option value="JM">Jamaica</option>
+                                                            <option value="JP">Japan</option>
+                                                            <option value="JE">Jersey</option>
+                                                            <option value="JO">Jordan</option>
+                                                            <option value="KZ">Kazakhstan</option>
+                                                            <option value="KE">Kenya</option>
+                                                            <option value="KI">Kiribati</option>
+                                                            <option value="KP">Korea, Democratic People's Republic of</option>
+                                                            <option value="KR">Korea, Republic of</option>
+                                                            <option value="KW">Kuwait</option>
+                                                            <option value="KG">Kyrgyzstan</option>
+                                                            <option value="LA">Lao People's Democratic Republic</option>
+                                                            <option value="LV">Latvia</option>
+                                                            <option value="LB">Lebanon</option>
+                                                            <option value="LS">Lesotho</option>
+                                                            <option value="LR">Liberia</option>
+                                                            <option value="LY">Libya</option>
+                                                            <option value="LI">Liechtenstein</option>
+                                                            <option value="LT">Lithuania</option>
+                                                            <option value="LU">Luxembourg</option>
+                                                            <option value="MO">Macao</option>
+                                                            <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                                                            <option value="MG">Madagascar</option>
+                                                            <option value="MW">Malawi</option>
+                                                            <option value="MY">Malaysia</option>
+                                                            <option value="MV">Maldives</option>
+                                                            <option value="ML">Mali</option>
+                                                            <option value="MT">Malta</option>
+                                                            <option value="MH">Marshall Islands</option>
+                                                            <option value="MQ">Martinique</option>
+                                                            <option value="MR">Mauritania</option>
+                                                            <option value="MU">Mauritius</option>
+                                                            <option value="YT">Mayotte</option>
+                                                            <option value="MX">Mexico</option>
+                                                            <option value="FM">Micronesia, Federated States of</option>
+                                                            <option value="MD">Moldova, Republic of</option>
+                                                            <option value="MC">Monaco</option>
+                                                            <option value="MN">Mongolia</option>
+                                                            <option value="ME">Montenegro</option>
+                                                            <option value="MS">Montserrat</option>
+                                                            <option value="MA">Morocco</option>
+                                                            <option value="MZ">Mozambique</option>
+                                                            <option value="MM">Myanmar</option>
+                                                            <option value="NA">Namibia</option>
+                                                            <option value="NR">Nauru</option>
+                                                            <option value="NP">Nepal</option>
+                                                            <option value="NL">Netherlands</option>
+                                                            <option value="NC">New Caledonia</option>
+                                                            <option value="NZ">New Zealand</option>
+                                                            <option value="NI">Nicaragua</option>
+                                                            <option value="NE">Niger</option>
+                                                            <option value="NG">Nigeria</option>
+                                                            <option value="NU">Niue</option>
+                                                            <option value="NF">Norfolk Island</option>
+                                                            <option value="MP">Northern Mariana Islands</option>
+                                                            <option value="NO">Norway</option>
+                                                            <option value="OM">Oman</option>
+                                                            <option value="PK">Pakistan</option>
+                                                            <option value="PW">Palau</option>
+                                                            <option value="PS">Palestinian Territory, Occupied</option>
+                                                            <option value="PA">Panama</option>
+                                                            <option value="PG">Papua New Guinea</option>
+                                                            <option value="PY">Paraguay</option>
+                                                            <option value="PE">Peru</option>
+                                                            <option value="PH">Philippines</option>
+                                                            <option value="PN">Pitcairn</option>
+                                                            <option value="PL">Poland</option>
+                                                            <option value="PT">Portugal</option>
+                                                            <option value="PR">Puerto Rico</option>
+                                                            <option value="QA">Qatar</option>
+                                                            <option value="RE">Réunion</option>
+                                                            <option value="RO">Romania</option>
+                                                            <option value="RU">Russian Federation</option>
+                                                            <option value="RW">Rwanda</option>
+                                                            <option value="BL">Saint Barthélemy</option>
+                                                            <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                                                            <option value="KN">Saint Kitts and Nevis</option>
+                                                            <option value="LC">Saint Lucia</option>
+                                                            <option value="MF">Saint Martin (French part)</option>
+                                                            <option value="PM">Saint Pierre and Miquelon</option>
+                                                            <option value="VC">Saint Vincent and the Grenadines</option>
+                                                            <option value="WS">Samoa</option>
+                                                            <option value="SM">San Marino</option>
+                                                            <option value="ST">Sao Tome and Principe</option>
+                                                            <option value="SA">Saudi Arabia</option>
+                                                            <option value="SN">Senegal</option>
+                                                            <option value="RS">Serbia</option>
+                                                            <option value="SC">Seychelles</option>
+                                                            <option value="SL">Sierra Leone</option>
+                                                            <option value="SG">Singapore</option>
+                                                            <option value="SX">Sint Maarten (Dutch part)</option>
+                                                            <option value="SK">Slovakia</option>
+                                                            <option value="SI">Slovenia</option>
+                                                            <option value="SB">Solomon Islands</option>
+                                                            <option value="SO">Somalia</option>
+                                                            <option value="ZA">South Africa</option>
+                                                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                                            <option value="SS">South Sudan</option>
+                                                            <option value="ES">Spain</option>
+                                                            <option value="LK">Sri Lanka</option>
+                                                            <option value="SD">Sudan</option>
+                                                            <option value="SR">Suriname</option>
+                                                            <option value="SJ">Svalbard and Jan Mayen</option>
+                                                            <option value="SZ">Swaziland</option>
+                                                            <option value="SE">Sweden</option>
+                                                            <option value="CH">Switzerland</option>
+                                                            <option value="SY">Syrian Arab Republic</option>
+                                                            <option value="TW">Taiwan, Province of China</option>
+                                                            <option value="TJ">Tajikistan</option>
+                                                            <option value="TZ">Tanzania, United Republic of</option>
+                                                            <option value="TH">Thailand</option>
+                                                            <option value="TL">Timor-Leste</option>
+                                                            <option value="TG">Togo</option>
+                                                            <option value="TK">Tokelau</option>
+                                                            <option value="TO">Tonga</option>
+                                                            <option value="TT">Trinidad and Tobago</option>
+                                                            <option value="TN">Tunisia</option>
+                                                            <option value="TR">Turkey</option>
+                                                            <option value="TM">Turkmenistan</option>
+                                                            <option value="TC">Turks and Caicos Islands</option>
+                                                            <option value="TV">Tuvalu</option>
+                                                            <option value="UG">Uganda</option>
+                                                            <option value="UA">Ukraine</option>
+                                                            <option value="AE">United Arab Emirates</option>
+                                                            <option value="GB">United Kingdom</option>
+                                                            <option value="US">United States</option>
+                                                            <option value="UM">United States Minor Outlying Islands</option>
+                                                            <option value="UY">Uruguay</option>
+                                                            <option value="UZ">Uzbekistan</option>
+                                                            <option value="VU">Vanuatu</option>
+                                                            <option value="VE">Venezuela, Bolivarian Republic of</option>
+                                                            <option value="VN">Viet Nam</option>
+                                                            <option value="VG">Virgin Islands, British</option>
+                                                            <option value="VI">Virgin Islands, U.S.</option>
+                                                            <option value="WF">Wallis and Futuna</option>
+                                                            <option value="EH">Western Sahara</option>
+                                                            <option value="YE">Yemen</option>
+                                                            <option value="ZM">Zambia</option>
+                                                            <option value="ZW">Zimbabwe</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Address</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Address">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Address 2</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Address 2">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Phone No</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Phone No">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">System E-mail *</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="System E-mail">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Footer Copyrights</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Footer Copyrights">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Enable In/Out for employees attendance</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label>
+                                                                <input type="radio" value="1" checked="checked">
+                                                                Enabled
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label>
+                                                                <input type="radio" name="sAttendanceModel" value="0">
+                                                                Disable
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Attendance model</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio" value="subject" checked="checked">
+                                                                Subject Based
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio" value="class">
+                                                                Class only
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Enable Sections</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Include
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Don't include
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Allow public registeration</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Allowed
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Not allowed
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Allow teachers send mail/sms</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Not allowed
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Email address
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio"> 
+                                                                SMS
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio" >
+                                                                Mail / SMS
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Timezone</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select primary-color">
+                                                            <option>(GMT-11:00) Midway Island, Samoa</option>
+                                                            <option>(GMT-10:00) Hawaii-Aleutian</option>
+                                                            <option>(GMT-10:00) Hawaii</option>
+                                                            <option>(GMT-09:30) Marquesas Islands</option>
+                                                            <option>(GMT-09:00) Gambier Islands</option>
+                                                            <option>(GMT-09:00) Alaska</option>
+                                                            <option>(GMT-08:00) Tijuana, Baja California</option>
+                                                            <option>(GMT-08:00) Pitcairn Islands</option>
+                                                            <option>(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                                                            <option>(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                                                            <option>(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                                                            <option>(GMT-07:00) Arizona</option>
+                                                            <option>(GMT-06:00) Saskatchewan, Central America</option>
+                                                            <option>(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                                                            <option>(GMT-06:00) Easter Island</option>
+                                                            <option>(GMT-06:00) Central Time (US &amp; Canada)</option>
+                                                            <option>(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                                                            <option>(GMT-05:00) Cuba</option>
+                                                            <option>(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                                                            <option>(GMT-04:30) Caracas</option>
+                                                            <option>(GMT-04:00) Santiago</option>
+                                                            <option>(GMT-04:00) La Paz</option>
+                                                            <option>(GMT-04:00) Faukland Islands</option>
+                                                            <option>(GMT-04:00) Brazil</option>
+                                                            <option>(GMT-04:00) Atlantic Time (Goose Bay)</option>
+                                                            <option>(GMT-04:00) Atlantic Time (Canada)</option>
+                                                            <option>(GMT-03:30) Newfoundland</option>
+                                                            <option>(GMT-03:00) UTC-3</option>
+                                                            <option>(GMT-03:00) Montevideo</option>
+                                                            <option>(GMT-03:00) Miquelon, St. Pierre</option>                                       
+                                                            <option>(GMT-03:00) Greenland</option>
+                                                            <option>America/A>(GMT-03:00) Buenos Aires</option>
+                                                            <option>(GMT-03:00) Brasilia</option>
+                                                            <option>(GMT-02:00) Mid-Atlantic</option>
+                                                            <option>(GMT-01:00) Cape Verde Is.</option>
+                                                            <option>(GMT-01:00) Azores</option>
+                                                            <option>(GMT) Greenwich Mean Time : Belfast</option>
+                                                            <option>(GMT) Greenwich Mean Time : Dublin</option>
+                                                            <option>(GMT) Greenwich Mean Time : Lisbon</option>
+                                                            <option>(GMT) Greenwich Mean Time : London</option>
+                                                            <option>(GMT) Monrovia, Reykjavik</option>
+                                                            <option>(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                                                            <option>(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                                                            <option>(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                                            <option>(GMT+01:00) West Central Africa</option>
+                                                            <option>(GMT+01:00) Windhoek</option>
+                                                            <option>(GMT+02:00) Beirut</option>
+                                                            <option>(GMT+02:00) Cairo</option>
+                                                            <option>(GMT+02:00) Gaza</option>
+                                                            <option>(GMT+02:00) Harare, Pretoria</option>
+                                                            <option>(GMT+02:00) Jerusalem</option>
+                                                            <option>(GMT+02:00) Minsk</option>
+                                                            <option>(GMT+02:00) Syria</option>
+                                                            <option>(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                                                            <option selected="selected">(GMT+03:00) Nairobi</option>
+                                                            <option>(GMT+03:30) Tehran</option>
+                                                            <option>(GMT+04:00) Abu Dhabi, Muscat</option>
+                                                            <option>(GMT+04:00) Yerevan</option>
+                                                            <option>(GMT+04:30) Kabul</option>
+                                                            <option>(GMT+05:00) Ekaterinburg</option>
+                                                            <option>(GMT+05:00) Tashkent</option>
+                                                            <option>(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                                                            <option>(GMT+05:45) Kathmandu</option>
+                                                            <option>(GMT+06:00) Astana, Dhaka</option>
+                                                            <option>(GMT+06:00) Novosibirsk</option>
+                                                            <option>(GMT+06:30) Yangon (Rangoon)</option>
+                                                            <option>(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                                                            <option>(GMT+07:00) Krasnoyarsk</option>
+                                                            <option>(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                                                            <option>(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                                                            <option>(GMT+08:00) Perth</option>
+                                                            <option>(GMT+08:45) Eucla</option>
+                                                            <option>(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                                                            <option>(GMT+09:00) Seoul</option>
+                                                            <option>(GMT+09:00) Yakutsk</option>
+                                                            <option>(GMT+09:30) Adelaide</option>
+                                                            <option>(GMT+09:30) Darwin</option>
+                                                            <option>(GMT+10:00) Brisbane</option>
+                                                            <option>(GMT+10:00) Hobart</option>
+                                                            <option>(GMT+10:00) Vladivostok</option>
+                                                            <option>(GMT+10:30) Lord Howe Island</option>
+                                                            <option>(GMT+11:00) Solomon Is., New Caledonia</option>
+                                                            <option>(GMT+11:00) Magadan</option>
+                                                            <option>(GMT+11:30) Norfolk Island</option>
+                                                            <option>(GMT+12:00) Anadyr, Kamchatka</option>
+                                                            <option>(GMT+12:00) Auckland, Wellington</option>
+                                                            <option>(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                                                            <option>(GMT+12:45) Chatham Islands</option>
+                                                            <option>(GMT+13:00) Nuku'alofa</option>
+                                                            <option>(GMT+14:00) Kiritimati</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Calendar</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select primary-color">
+                                                            <option value="ethiopic">Ethiopic</option>
+                                                            <option value="gregorian">Gregorian</option>
+                                                            <option value="islamic">Islamic</option>
+                                                            <option value="persian">Persian</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Calendar Offset</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select primary-color">
+                                                            <option value="-2">-2 Days</option>
+                                                            <option value="-1">-1 Days</option>
+                                                            <option value="0">No Offset</option>
+                                                            <option value="+1">+1 Days</option>
+                                                            <option value="+2">+2 Days</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Date Format</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-select primary-color">
+                                                            <option value="m/d/Y">MM-DD-YYYY</option>
+                                                            <option value="d/m/Y">DD-MM-YYYY</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Studnet's E-mail</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Mandatory
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label class="">
+                                                                <input type="radio">
+                                                                Not Mandatory
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">Google Analytics Tracking ID </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="Google Analytics Tracking ID">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">HTTPS Enabled</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label>
+                                                                <input type="radio">
+                                                                Enabled
+                                                                <small>Don't enable unless you've SSL certifcate enabled in your domain</small>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label>
+                                                                <input type="radio">
+                                                                Disabled
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-2">
+                                                    <label class="col-sm-3 text-end primary-color">WYSIWYG Type</label>
+                                                    <div class="col-sm-9 primary-color">
+                                                        <div class="radio-list">
+                                                            <label>
+                                                                <input type="radio">
+                                                                Simple
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio-list">
+                                                            <label>
+                                                                <input type="radio">
+                                                                Advanced
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="offset-sm-2 col-sm-9">
+                                                    <button type="submit" class="btn btn-info text-white mt-3">Edit settings</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 offset-2">
+                    <footer>
+                        <div class="footer-box border bg-white">
+                            All Rights Reserved. <a href="#" class="text-decoration-none text-primary">- School
+                                Terms</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
