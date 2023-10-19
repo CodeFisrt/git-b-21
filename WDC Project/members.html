@@ -7,7 +7,8 @@
     <title>School of WDC | Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -358,8 +359,8 @@
                                     <i class="fa-solid fa-chevron-right same-icon-color"></i>
                                     <div class="collapse" id="expenses-collapse">
                                         <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
-                                            <li class="sidebar-sub-links"><a href="expenses.html">Expenses</a></li>
-                                            <li class="sidebar-sub-links"><a href="expensesc.html">Expenses Categories</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Expenses</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Expenses Categories</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -374,8 +375,8 @@
                                     <i class="fa-solid fa-chevron-right same-icon-color"></i>
                                     <div class="collapse" id="income-collapse">
                                         <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
-                                            <li class="sidebar-sub-links"><a href="income.html">Income</a></li>
-                                            <li class="sidebar-sub-links"><a href="incomec.html">Income Categories</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Income</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Income Categories</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -448,9 +449,9 @@
                                     <i class="fa-solid fa-chevron-right same-icon-color"></i>
                                     <div class="collapse" id="transportation-collapse">
                                         <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
-                                            <li class="sidebar-sub-links"><a href="transportation.html">Transportation</a></li>
-                                            <li class="sidebar-sub-links"><a href="transportv.html">Transport Vehical</a></li>
-                                            <li class="sidebar-sub-links"><a href="members.html">Members</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Transportation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Transport Vehical</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Members</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -552,102 +553,49 @@
                         </nav>
                     </header>
                 </div>
-                <div class="col-10 offset-2 px-4">
-                    <div class="acadmic-year-box">
-                        <h3 class="items-heading py-4 m-0 fw-normal">Administrators</h3>
+                <div class="col-10 offset-2">
+                    <div class="transportation-box">
+                        <h3 class="items-heading py-4 m-0 fw-normal">Transportation</h3>
                         <div class="list-acadmic-year p-4 bg-white rounded">
                             <div class="top-items p-2">
                                 <div class="top-items-heading">
-                                    <h5 class="fw-normal">Add Administrators</h5>
-                                </div>
-                                <div class="d-flex">
-                                    <button class="btn btn-danger">Cancle add</button>
+                                    <h5 class="fw-normal">Members</h5>
                                 </div>
                             </div>
                             <div class="bottom-items">
-                                <form class="form-horizontal" name="addAdmin" role="form">
+                                <form action="">
                                     <div class="form-group row py-3">
-                                        <label class="col-sm-2 text-end add-heading-color">Full name * </label>
+                                        <label class="col-sm-2 text-end">Transportation</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="fullName" class="form-control add-input-border" placeholder="Full name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row py-3 ">
-                                        <label class="col-sm-2 text-end add-heading-color">Username *</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" name="username" class="form-control add-input-border" placeholder="Username">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row py-3" >
-                                        <label class="col-sm-2 text-end add-heading-color">Email address *</label>
-                                        <div class="col-sm-10">
-                                            <input type="email" name="email" class="form-control add-input-border" placeholder="Email address">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row py-3">
-                                        <label class="col-sm-2 text-end add-heading-color">Password *</label>
-                                        <div class="col-sm-10">
-                                            <input type="password" name="password" class="form-control add-input-border" placeholder="Password">
-                                        </div>
-                                    </div> 
-                                    <div class="form-group row py-3">
-                                        <label class="col-sm-2 text-end add-items-color">Photo</label>
-                                        <div class="col-sm-10">
-                                            <input type="file" name="photo">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row py-3">
-                                        <label class="col-sm-2 text-end add-items-color">Communication</label>
-                                        <div class="col-sm-10">
-            
-                                            <div class="radio-list">
-                                                <label class="ng-binding add-items-color">
-                                                    <input type="checkbox" name="comVia" checked> Mail
-                                                </label>
-                                            </div>
-                                            <div class="radio-list">
-                                                <label class="ng-binding add-items-color">
-                                                    <input type="checkbox" name="comVia" checked> SMS
-                                                </label>
-                                            </div>
-                                            <div class="radio-list ">
-                                                <label class="ng-binding add-items-color">
-                                                    <input type="checkbox" name="comVia" checked> Phone
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group row py-3">
-                                        <label class="col-sm-2 text-end add-heading-color">Permissions</label>
-                                        <div class="col-sm-10">
-                                            <select class="form-select add-input-border" name="role_perm">
+                                            <select class="form-select" name="role_perm">
                                                 <option value="none"></option>
-                                                <option value="1">Super Administrators</option>
-                                                <option value="2">Administrators</option>
-                                                <option value="3">Manager</option>
-                                                <option value="4">Principal</option>
-                                                <option value="5">Teacher</option>
-                                                <option value="6">Student</option>
-                                                <option value="7">Parents</option>
-                                                <option value="8">Accountant</option>
-                                                <option value="9">Librarian</option>
-                                                <option value="10">HR</option>
-                                                <option value="11">Receptionist</option>
-                                                <option value="12">Store Keeper</option>
-                                                <option value="13">Notification Sender</option>
+                                                <option value="1">City Center</option>
+                                                <option value="2">Down City</option>
+                                                <option value="3">Festival City</option>
+                                               
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group m-b-0">
-                                        <div class="offset-sm-2 col-sm-10">
-                                            <button type="submit" class="btn btn-info text-white" disabled="disabled">Add admininstrator</button>
+                                    <div class="form-group row py-3">
+                                        <label class="col-sm-2 text-end">Transport Vehical</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-select" name="role_perm">
+                                                <option value="none"></option>
+                                                <option value="1">JMK -098 (Johm B
+                                                    Ransom)</option>
+                                                <option value="1">UIO-765 (Harold
+                                                    S RIX)</option>
+                                                <option value="2">JMK -098 (Johm B Ransom)</option>
+                                                <option value="3">JMK -098 (Johm B Ransom)</option>
+                                               
+                                            </select>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
+                </div>        
                 </div>
                 <div class="col-10 offset-2">
                     <footer>
@@ -658,7 +606,7 @@
                     </footer>
                 </div>
             </div>
-        </div>
+        </div>    
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
