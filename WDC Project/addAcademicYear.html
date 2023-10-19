@@ -552,70 +552,38 @@
                         </nav>
                     </header>
                 </div>
-                <div class="col-10 offset-2 px-4 mb-5">
-                    <div class="dormitories-box">
-                        <h3 class="items-heading py-4 m-0 fw-normal">Dormitories</h3>
+                <div class="col-10 offset-2 px-4">
+                    <div class="acadmic-year-box">
+                        <h3 class="items-heading py-4 m-0 fw-normal">Academic Years</h3>
                         <div class="list-acadmic-year p-4 bg-white rounded">
                             <div class="top-items p-2">
                                 <div class="top-items-heading">
-                                    <h5 class="fw-normal">List Dormitories</h5>
+                                    <h5 class="fw-normal">Add Academic Year</h5>
                                 </div>
                                 <div class="d-flex">
-                                    <button class="btn btn-success fw-light">Add dormitories</button>
+                                    <button class="btn btn-danger">Cancle add</button>
                                 </div>
                             </div>
-                            <div class="card bottom-items border-0">
-                                <div class="card-block">
-                                    <div class="academic-year-table">
-                                        <table class="table table-hover table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th class="p-3 text-color fw-medium">Dormitory Name</th>
-                                                    <th class="p-3 text-color fw-medium">Dormitory Description</th>
-                                                    <th class="p-3 text-color fw-medium">Operations</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="p-3">Middle School Dorm</td>
-                                                    <td class="p-3">Dormitories are comfortable and safe. All dormitory doors have been fitted with keyless entry locks for additional security.</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Boys Drom</td>
-                                                    <td class="p-3">Dormitories are comfortable and safe. All dormitory doors have been fitted with keyless entry locks for additional security.</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Girls Dorm</td>
-                                                    <td class="p-3">Dormitories are comfortable and safe. All dormitory doors have been fitted with keyless entry locks for additional security.</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                            <div class="bottom-items">
+                                <form class="form-horizontal" name="addyear" role="form">
+                                    <div class="form-group row">
+                                        <label class="add-heading-color col-sm-2 text-end">Year Title * </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="yearTitle"  class="form-control add-input-border" required="" placeholder="Year Title">
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="form-group row my-4">
+                                        <label class="col-sm-2 text-right add-items-color">Default academic year</label>
+                                        <div class="col-sm-10">
+                                            <label class="add-items-color"><input type="checkbox" name="isDefault"> Mark as default academic year</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-b-0">
+                                        <div class="offset-sm-2 col-sm-10">
+                                            <button type="submit" class="btn btn-info waves-effect waves-light text-white" disabled="disabled">Add academic year</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

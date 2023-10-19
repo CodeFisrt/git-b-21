@@ -21,6 +21,10 @@ a {
     color: #54667a;
 }
 
+.primary-color {
+    color: #54667a;
+}
+
 ::-webkit-scrollbar {
     height: 4px;
     width: 7px;
@@ -32,6 +36,26 @@ a {
     background: gray;
     border-radius: 10px;
 }
+
+/* Login Page - start */
+
+.login-page {
+    background-image: url(../images/login_image.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.resistration-form {
+    width: 100%;
+    height: 100%;
+    padding: 10% 33%;
+}
+
+.login-box {
+    width: 400px;
+}
+
+/* Login Page - end */
 
 .sidebar {
     position: fixed;
@@ -148,6 +172,11 @@ a {
     margin-bottom: 150px;
 }
 
+footer {
+    position: relative;
+    bottom: 0;
+}
+
 .footer-box {
     overflow-x: hidden;
     color: #54667a;
@@ -218,7 +247,7 @@ a {
 }
 
 .user-info-item small {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .user-info-button button {
@@ -230,6 +259,10 @@ a {
     position: relative;
     height: 300px;
     overflow-x: hidden;
+}
+
+.leaderboard-navbar small {
+    font-size: 12px;
 }
 
 .student-info img {
@@ -248,9 +281,7 @@ a {
     width: 100%;
 }
 
-.invoice-normal-chart th {
-    color: #54667a;
-}
+
 
 .invoice-normal-chart {
     border-top-left-radius: 7px;
@@ -292,103 +323,139 @@ a {
     overflow-x: hidden;
 }
 
+.message-navbar small {
+    font-size: 12px;
+}
+
 .meeting-block {
     height: 380px;
 }
 
-
-
-body {
-    --grey-100: #e4e9f0;
-    --grey-200: #cfd7e3;
-    --grey-300: #b5c0cd;
-    --grey-800: #3e4e63;
-    --grid-gap: 1px;
-    --day-label-size: 20px;
-}
-
-ol,
-li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.calendar-month {
+.calendar {
     position: relative;
-    background-color: var(--grey-200);
-    border: solid 1px var(--grey-200);
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    height: 360px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 15px;
 }
 
-.calendar-month-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 10px;
-}
 
-.calendar-month-header-selected-month {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.calendar-month-header-selectors {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80px;
-}
-
-.calendar-month-header-selectors>* {
-    cursor: pointer;
-}
-
-.day-of-week {
-    color: var(--grey-800);
-    font-size: 18px;
-    background-color: #fff;
-    padding-bottom: 5px;
-    padding-top: 10px;
-}
-
-.day-of-week,
-.days-grid {
+.calendar .calendar-inner .calendar-body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    text-align: center;
 }
 
-.day-of-week>* {
-    text-align: right;
-    padding-right: 5px;
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 20px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
 }
 
-.days-grid {
-    height: 100%;
-    position: relative;
-    grid-column-gap: var(--grid-gap);
-    grid-row-gap: var(--grid-gap);
-    border-top: solid 1px var(--grey-200);
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
 }
 
-.calendar-day {
-    position: relative;
-    min-height: 100px;
-    font-size: 16px;
-    background-color: #fff;
-    color: var(--grey-800);
-    padding: 5px;
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
 }
 
-.calendar-day>span {
+.calendar .calendar-inner .calendar-body div>a {
+    color: var(--calendar-font-color);
+    text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 2px;
-    width: var(--day-label-size);
-    height: var(--day-label-size);
 }
 
+.calendar .calendar-inner .calendar-body div:hover {
+    border: 1px solid var(--calendar-date-hover-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .calendar-inner .calendar-today-date {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px 0px;
+    background: var(--calendar-current-date-color);
+    padding: 8px 0px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+    background: var(--calendar-today-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today a {
+    outline: 2px solid var(--calendar-today-innerborder-color);
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+    color: var(--calendar-font-color);
+    font-family: arial, consolas, sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: inline-block;
+    background: var(--calendar-nextprev-bg-color);
+    margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path {
+    fill: var(--next-prev-arrow-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates,
+.calendar .calendar-inner .calendar-body .next-dates {
+    color: var(--calendar-prevnext-date-color);
+}
 
 /* Dasboard - End */
 
@@ -445,6 +512,8 @@ li {
 
 /* Administrative Task  - End */
 
+/* Employee , Mypayroll,payroll start */
+
 .user-img {
     width: 35px;
     height: 35px;
@@ -484,7 +553,9 @@ li {
     margin: 0px;
     font-size: 16px;
 }
+/* Employee , Mypayroll,payroll  end */
 
+/* Report start */
 .icons {
      padding-top: 10px;
     text-align: center;
@@ -496,3 +567,17 @@ li {
 h5{
     font-size: 16px;
 }
+/* Report end */
+.add-heading-color {
+    color: #a94442;
+}
+
+.add-input-border {
+    border-color: #a94442;
+}
+
+.add-items-color {
+    color: #54667a;
+}
+
+/* Administrative Task  - End */
