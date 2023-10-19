@@ -552,191 +552,185 @@
                         </nav>
                     </header>
                 </div>
-                <div class="col-10 offset-2 px-4 mb-5">
-                    <div class="roles-box">
-                        <h3 class="items-heading py-4 m-0 fw-normal">Permission Roles</h3>
-                        <div class="list-acadmic-year p-4 bg-white rounded">
-                            <div class="top-items p-2">
-                                <div class="d-flex">
-                                    <div class="me-2">
-                                        <div class="input-group input-group-sm">
-                                            <input type="text" name="table_search" placeholder="Search"class="form-control m-0">
-                                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <div class="col-10 offset-2 px-4">
+                    <div class="acadmic-year-box">
+                        <h3 class="items-heading py-4 m-0 fw-normal">Administrative tasks</h3>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card bg-white border-0">
+                                    <div class="card-block p-4">
+                                        <div class="list-group">
+                                            <a class="list-group-item active py-3" href="#">Global Settings</a>
+                                            <a class="list-group-item py-3 text-primary" href="#" >Activated Modules</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Payments Settings</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Mail / SMS Settings</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Vacation Settings</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Mobile application</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">frontend CMS</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Biometric Integration</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Zoom Integration</a>
+                                            <a class="list-group-item py-3 text-primary" href="#">Look &amp; Feel</a>
+                        
                                         </div>
                                     </div>
-                                    <button class="btn btn-success">Add roles</button>
                                 </div>
                             </div>
-                            <div class="card bottom-items border-0">
-                                <div class="card-block">
-                                    <div class="academic-year-table">
-                                        <table class="table table-hover table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th class="p-3 text-color fw-medium">Role Title</th>
-                                                    <th class="p-3 text-color fw-medium">Role Description</th>
-                                                    <th class="p-3 text-color fw-medium">Operations</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="p-3">Super Administrators</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Administrators</td>
-                                                    <td class="p-3">Default role for administrators</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Manager</td>
-                                                    <td class="p-3">French</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Principal</td>
-                                                    <td class="p-3">Dutch</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Teacher</td>
-                                                    <td class="p-3">Default role for teachers</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Student</td>
-                                                    <td class="p-3">Default role for teachers</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Parents</td>
-                                                    <td class="p-3">Default role for teachers</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Accountant</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Librarian</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">HR</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Receptionist</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Store Keeper</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Notification Sender</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                            <div class="col-md-9">
+                                <div class="card border-0">
+                                    <div class="card-block p-4">
+                                        <form class="form-horizontal">
+                                            <div class="Payment-setting-box">
+                                                <h4 class="fw-normal">Payments Settings</h4>
+                                                <br>
+                                                <div class="form-group row py-3 primary-color">
+                                                    <label class="col-sm-3 text-end">Currency Code ( 3 Phrases like USD ) *</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="USD">
+                                                        <small class="">Supported codes for paypal are : AUD, BRL, CAD, CZK, DKK, EUR, HKD, HUF, ILS, JPY, MYR, MXN, NOK, NZD, PHP, PLN, GBP, RUB, SGD, SEK, CHF, TWD, THB, TRY, USD</small>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-3 primary-color">
+                                                    <label class="col-sm-3 text-end">Currency Symbol (like $) *</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="$">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row py-3 primary-color">
+                                                    <label class="col-sm-3 text-end">Payment Tax % *</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" placeholder="$">
+                                                        <small class="">Set to 0 for none</small>
+                                                    </div>
+                                                </div>
+                                                <div class="card m-3"> 
+                                                    <div class="card-header bg-primary">
+                                                        <h5 class="text-white fw-normal">Paypal</h3>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="form-group row my-4 primary-color">
+                                                            <label class="col-sm-3 text-end">Paypal Enabled *</label>
+                                                            <div class="col-sm-9">
+                                                                <div class="radio-list">
+                                                                    <label>
+                                                                        <input type="radio" checked> Enabled
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="radio"> Disabled
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row mt-4 mb-5 primary-color">
+                                                            <label class="col-sm-3 text-end">Paypal payment E-mail *</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" name="paypalPayment" ng-model="form.paypalPayment" class="form-control" placeholder="Paypal payment E-mail">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card m-3">
+                                                    <div class="card-header bg-primary">
+                                                        <h5 class="fw-normal text-white">2Checkout</h5>
+                                                    </div>
+                                                    <div class="card-block p-5">
+                                                        <div class="form-group row mb-3 primary-color">
+                                                            <label class="col-sm-3 text-end">2Checkout Enabled *</label>
+                                                            <div class="col-sm-9">
+                                                                <div class="radio-list">
+                                                                    <label>
+                                                                        <input type="radio" checked> Enabled
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="radio"> Disabled
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row my-3 primary-color">
+                                                            <label class="col-sm-3 text-end">2Checkout SID</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" placeholder="2Checkout SID">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row mt-3  primary-color">
+                                                            <label class="col-sm-3 text-end">2Checkout Hash</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control secondary-color" placeholder="2Checkout Hash">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card m-3">
+                                                    <div class="card-header bg-primary">
+                                                        <h5 class="fw-normal text-white">PayUmoney</h5>
+                                                    </div>
+                                                    <div class="card-block p-5">
+                                                        <div class="form-group row mb-3 primary-color">
+                                                            <label class="col-sm-3 text-end">PayUmoney Enabled *</label>
+                                                            <div class="col-sm-9">
+                                                                <div class="radio-list">
+                                                                    <label>
+                                                                        <input type="radio" checked> Enabled
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="radio"> Disabled
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row my-3 primary-color">
+                                                            <label class="col-sm-3 text-end">PayUmoney Key</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" name="payumoneyKey" ng-model="form.payumoneyKey" class="form-control" placeholder="PayUmoney Key">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row mt-3 primary-color">
+                                                            <label class="col-sm-3 text-end">PayUmoney Salt</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" name="payumoneySalt" ng-model="form.payumoneySalt" class="form-control" placeholder="PayUmoney Salt">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card m-3">
+                                                    <div class="card-header bg-primary">
+                                                        <h5 class="fw-normal text-white">Paystack</h5>
+                                                    </div>
+                                                    <div class="card-block p-5">
+                                                        <div class="form-group row mb-3 primary-color">
+                                                            <label class="col-sm-3 text-end">Paystack Enabled *</label>
+                                                            <div class="col-sm-9">
+                                                                <div class="radio-list">
+                                                                    <label>
+                                                                        <input type="radio" checked> Enabled
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="radio"> Disabled
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row my-3 primary-color">
+                                                            <label class="col-sm-3 text-end">Paystack Secret Key</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" placeholder="Paystack Secret Key">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row primary-color">
+                                                            <label class="col-sm-3 text-end">Paystack Public Key</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" placeholder="Paystack Public Key">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-b-0">
+                                                <div class="offset-sm-2 col-sm-9">
+                                                    <button type="submit" class="btn btn-info text-white">Edit settings</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
