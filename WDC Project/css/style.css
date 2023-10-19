@@ -13,11 +13,11 @@ a {
     text-decoration: none;
 }
 
-.same-icon-color{
+.same-icon-color {
     color: #a6b7bf;
 }
 
-.diff-icon-color{
+.diff-icon-color {
     color: #54667a;
 }
 
@@ -33,15 +33,17 @@ a {
     border-radius: 10px;
 }
 
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
 }
-.logo-heading{
+
+.logo-heading {
     color: #54667a;
     font-size: 1.25rem;
 }
+
 .scrollable-bar {
     bottom: 0;
     height: 100vh;
@@ -87,7 +89,7 @@ a {
     margin: 0 11px;
 }
 
-.nav-item{
+.nav-item {
     color: #54667a;
     letter-spacing: 0.5px;
 }
@@ -117,7 +119,7 @@ a {
     left: 0;
 }
 
-.bottom-main-links{
+.bottom-main-links {
     padding: 15px 0;
 }
 
@@ -131,20 +133,22 @@ a {
     float: right;
     padding-top: 5px;
 }
-.top-navbar{
+
+.top-navbar {
     padding: 22px;
     background-image: linear-gradient(to right, #533fd0, #840fb5);
 }
-.top-navbar img{
+
+.top-navbar img {
     width: 30px;
     border-radius: 50px;
 }
 
-.sidebar-list{
+.sidebar-list {
     margin-bottom: 150px;
 }
 
-.footer-box{
+.footer-box {
     overflow-x: hidden;
     color: #54667a;
     font-weight: 300;
@@ -154,17 +158,19 @@ a {
 
 .sidebar-main-item:hover {
     background: #eee;
-    color: #54667a;;
+    color: #54667a;
+    ;
 }
 
-.sidebar-main-links :hover{
+.sidebar-main-links :hover {
     color: #533fd0;
     background: #eee;
 }
 
-.slider-both-items :hover{
+.slider-both-items :hover {
     color: #533fd0;
 }
+
 .profile-links:hover {
     color: #533fd0;
     background: #eee;
@@ -174,7 +180,8 @@ a {
     color: #533fd0;
     background: #eee;
 }
-.items-heading{
+
+.items-heading {
     font-size: 22px;
     color: #7460ee !important;
 }
@@ -218,69 +225,74 @@ a {
     width: 90%;
     margin: 10px 20px;
 }
-.leaderboard-navbar{
+
+.leaderboard-navbar {
     position: relative;
     height: 300px;
     overflow-x: hidden;
 }
-.student-info img{
+
+.student-info img {
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
-.birthday-block{
+
+.birthday-block {
     position: relative;
     width: auto;
     height: 410px;
 }
-.links-button a{
+
+.links-button a {
     width: 100%;
 }
 
-.invoice-normal-chart th{
+.invoice-normal-chart th {
     color: #54667a;
 }
 
-.invoice-normal-chart{
+.invoice-normal-chart {
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
 }
 
-.invoice-normal-chart td{
+.invoice-normal-chart td {
     color: #54667a;
     letter-spacing: 0.7px;
     padding: 9px;
 }
 
-.statous-btn{
+.statous-btn {
     font-size: 75%;
     padding: 2px 10px;
 }
 
-.invoice-barchart{
+.invoice-barchart {
     width: 360px;
     height: 476px;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
 }
-.slimScrollDiv{
+
+.slimScrollDiv {
     position: relative;
     overflow: hidden;
     width: auto;
     height: 300px;
 }
 
-.news-btn{
+.news-btn {
     width: 90px;
 }
 
-.message-navbar{
+.message-navbar {
     position: relative;
     height: 320px;
     overflow-x: hidden;
 }
 
-.meeting-block{
+.meeting-block {
     height: 380px;
 }
 
@@ -293,81 +305,81 @@ body {
     --grey-800: #3e4e63;
     --grid-gap: 1px;
     --day-label-size: 20px;
-  }
-  
-  ol,
-  li {
+}
+
+ol,
+li {
     padding: 0;
     margin: 0;
     list-style: none;
-  }
-  
-  .calendar-month {
+}
+
+.calendar-month {
     position: relative;
     background-color: var(--grey-200);
     border: solid 1px var(--grey-200);
-  }
-  
-  .calendar-month-header {
+}
+
+.calendar-month-header {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
     padding: 10px;
-  }
-  
-  .calendar-month-header-selected-month {
+}
+
+.calendar-month-header-selected-month {
     font-size: 24px;
     font-weight: 600;
-  }
-  
-  .calendar-month-header-selectors {
+}
+
+.calendar-month-header-selectors {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80px;
-  }
-  
-  .calendar-month-header-selectors > * {
+}
+
+.calendar-month-header-selectors>* {
     cursor: pointer;
-  }
-  
-  .day-of-week {
+}
+
+.day-of-week {
     color: var(--grey-800);
     font-size: 18px;
     background-color: #fff;
     padding-bottom: 5px;
     padding-top: 10px;
-  }
-  
-  .day-of-week,
-  .days-grid {
+}
+
+.day-of-week,
+.days-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-  }
-  
-  .day-of-week > * {
+}
+
+.day-of-week>* {
     text-align: right;
     padding-right: 5px;
-  }
-  
-  .days-grid {
+}
+
+.days-grid {
     height: 100%;
     position: relative;
     grid-column-gap: var(--grid-gap);
     grid-row-gap: var(--grid-gap);
     border-top: solid 1px var(--grey-200);
-  }
-  
-  .calendar-day {
+}
+
+.calendar-day {
     position: relative;
     min-height: 100px;
     font-size: 16px;
     background-color: #fff;
     color: var(--grey-800);
     padding: 5px;
-  }
-  
-  .calendar-day > span {
+}
+
+.calendar-day>span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,14 +387,14 @@ body {
     right: 2px;
     width: var(--day-label-size);
     height: var(--day-label-size);
-  }
-  
+}
+
 
 /* Dasboard - End */
 
 /* Administrative Task - Start */
 
-.top-items-heading h5{
+.top-items-heading h5 {
     font-size: 18px;
 }
 
@@ -403,25 +415,84 @@ body {
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: .25rem;
 }
-.academic-year-table button{
+
+.academic-year-table button {
     border-radius: 100%;
 }
-.academic-year-table i{
+
+.academic-year-table i {
     font-size: 13px;
 }
-.academic-year-table th{
+
+.academic-year-table th {
     color: #54667a;
     letter-spacing: 0.5px;
 }
-.academic-year-table td{
+
+.academic-year-table td {
     color: #54667a;
     letter-spacing: 0.5px;
 }
-.academic-year-table img{
+
+.academic-year-table img {
     height: 40px;
     border-radius: 100%;
 }
-.dbExport-btn button{
+
+.dbExport-btn button {
     padding: 15px 90px 15px 10px;
 }
+
 /* Administrative Task  - End */
+
+.user-img {
+    width: 35px;
+    height: 35px;
+}
+
+
+.tbl {
+    border: 1px solid #eceeef;
+}
+
+.table thead th {
+    border: 0px;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.btn-circle {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.table td,
+.table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+
+.circle {
+    width: 43px;
+    height: 43px;
+    background-color: green;
+   
+    margin: 0px;
+    font-size: 16px;
+}
+
+.icons {
+     padding-top: 10px;
+    text-align: center;
+    
+}
+.card{
+    border: none;
+}
+h5{
+    font-size: 16px;
+}
