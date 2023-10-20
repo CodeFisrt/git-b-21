@@ -7,8 +7,7 @@
     <title>School of WDC | Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -29,7 +28,7 @@
                         <nav class="scrollable-bar">
                             <div class="logo">
                                 <div class="logo-img-wrap">
-                                    <img src="images/img-1.jpg"  alt="" class="fluid logo-img">
+                                    <img src="images/img-1.jpg" alt="" class="logo-img">
                                 </div>
                                 <div class="profile dropdown">
                                     <button class="border border-0 dropdown-toggle bg-white" type="button"
@@ -233,7 +232,7 @@
                                     <div class="collapse" id="employees-collapse">
                                         <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
                                             <li class="sidebar-sub-links"><a href="employee.html">Employees</a></li>
-                                            <li class="sidebar-sub-links"><a href="teacher.html">Teachers</a></li>
+                                            <li class="sidebar-sub-links"><a href="reports.html">Teachers</a></li>
                                             <li class="sidebar-sub-links"><a href="departments.html">Departments</a></li>
                                             <li class="sidebar-sub-links"><a href="designation.html">Designation</a></li>
                                         </ul>
@@ -538,619 +537,226 @@
                     </div>
                 </div>
                 <div class="col-10">
-                    <header>
+                    <header class="">
                         <nav class="navbar top-navbar">
                             <ul class="list-unstyled m-0">
                                 <li><a href="#"><i class="fa-solid fa-arrow-left same-icon-color"></i></a></i></li>
                             </ul>
                             <ul class="d-flex list-unstyled m-0">
-                                <li class="px-3"><a href="#"><img src="images/img-1.jpg" class="fluid"></a></li>
+                                <li class="px-3"><a href="#"><img src="images/img-1.jpg"></a></li>
                                 <li class="px-3"><a href="#"><i class="fa fa-language same-icon-color"></i></a></li>
-                                <li class="px-3"><a href="#"><i class="fa fa-power-off same-icon-color"></i></a></li>
+                                <li class="px-3"><a href="loginPage.html"><i class="fa fa-power-off same-icon-color"></i></a></li>
                                 <li class="px-3"><a href="#"><i class="fa-solid fa-border-all same-icon-color"></i></a>
                                 </li>
                             </ul>
                         </nav>
                     </header>
                 </div>
-                <div class="col-10 offset-2">
-                    <div class="row ps-3">
-                        <div class="col-12 my-3">
-                            <div class="row">
-                                <div class="dashboard-heading">
-                                    <h3 class="items-heading py-4 m-0 fw-normal">Dashboard</h3>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="card bg-success p-3 text-white border-0">
-                                        <h5 class="mb-4 fw-normal">Classes</h5>
-                                        <h5 class="text-end fw-normal">
-                                            <i class="fa-solid fa-arrow-up-short-wide"></i>
-                                            <span>3</span>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-inner ">
-                                            <div class="carousel-item card active bg-info border-0">
-                                                <div class="p-3 text-white">
-                                                    <h5 class="mb-4 fw-normal">Student</h5>
-                                                    <h5 class="text-end fw-normal">
-                                                        <i class="fa-solid fa-user"></i>
-                                                        <span>15</span>
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item card bg-info border-0">
-                                                <div class="p-3 text-white">
-                                                    <h5 class="mb-4 fw-normal">Teachers</h5>
-                                                    <h5 class="text-end fw-normal">
-                                                        <i class="fa-solid fa-user"></i>
-                                                        <span>20</span>
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item card bg-info border-0">
-                                                <div class="p-3 text-white">
-                                                    <h5 class="mb-4 fw-normal">Parents</h5>
-                                                    <h5 class="text-end fw-normal">
-                                                        <i class="fa-solid fa-user"></i>
-                                                        <span>5</span>
-                                                    </h5>
-                                                </div>
-                                            </div>
+                <div class="col-10 offset-2 px-4 mb-5">
+                    <div class="roles-box">
+                        <h3 class="items-heading py-4 m-0 fw-normal">Permission Roles</h3>
+                        <div class="list-acadmic-year p-4 bg-white rounded">
+                            <div class="top-items p-2">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" name="table_search" placeholder="Search"class="form-control m-0">
+                                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="card bg-danger p-3 text-white border-0">
-                                        <h5 class="mb-4 fw-normal">Message</h5>
-                                        <h5 class="text-end fw-normal">
-                                            <i class="fa-solid fa-message"></i>
-                                            <span>0</span>
-                                        </h5>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-3">
-                                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active card bg-primary border-0">
-                                                <div class="p-3 text-white">
-                                                    <h5 class="mb-4 fw-normal">Invoices</h5>
-                                                    <h5 class="text-end fw-normal">
-                                                        <i class="fa-solid fa-dollar-sign"></i>
-                                                        <span>20942</span>
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item card bg-primary border-0">
-                                                <div class="p-3 text-white">
-                                                    <h5 class="mb-4 fw-normal">Due Invoices</h5>
-                                                    <h5 class="text-end fw-normal">
-                                                        <i class="fa-solid fa-dollar-sign"></i>
-                                                        <span>19674</span>
-                                                    </h5>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                                    <button class="btn btn-success"><a href="addPermissionRolls.html" class="text-white">Add roles</a></button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 my-3">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="card border-0 bg-white">
-                                        <div class="user-info d-flex">
-                                            <img src="images/img-1.jpg" class="fluid" alt="">
-                                            <div class="user-info-item">
-                                                <h5 class="fw-normal">Brittany Babotts</h5>
-                                                <small class="d-block">Username : admin</small>
-                                                <small class="d-block">Mail : <br>info@solutionsbricks.com</small>
-                                                <small class="d-block">Role : ADMIN</small>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="user-info-button">
-                                            <button class="btn btn-primary d-block">
-                                                <div class="text-start">
-                                                    <i class="fa-solid fa-gear"></i>
-                                                    <span>Account Setting</span>
-                                                </div>
-                                            </button>
-                                            <button class="btn btn-primary d-block">
-                                                <div class="text-start">
-                                                    <i class="fa-solid fa-message"></i>
-                                                    <span>Message</span>
-                                                </div>
-                                            </button>
-                                            <button class="btn btn-primary d-block">
-                                                <div class="text-start">
-                                                    <i class="fa fa-power-off"></i>
-                                                    <span>Logout</span>
-                                                </div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-3 col-sm-6">
-                                    <div class="card p-3 border-0">
-                                        <div>
-                                            <i class="fa-solid fa-trophy"></i>
-                                            <span class="fs-5">Student's leaderboard</span>
-                                        </div>
-                                        <nav class="leaderboard-navbar">
-                                            <div class="student-info">
-                                                <ul class="list-unstyled mt-4">
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6 class="fw-normal">Alice Bean</h6>
-                                                            <small class="primary-color">jh</small>
-                                                        </span>
-                                                    </li>
-                                                    <hr>
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6 class="fw-normal">Elaine Beange</h6>
-                                                            <small class="primary-color">Helping other students</small>
-                                                        </span>
-                                                    </li>
-                                                    <hr>
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6 class="fw-normal">Geema Billimbham</h6>
-                                                            <small class="primary-color">Helping other</small>
-                                                        </span>
-                                                    </li>
-                                                    <hr>
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6 class="fw-normal" >Rajai Darwich</h6>
-                                                            <small class="primary-color">Great job!</small>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-3 col-sm-6">
-                                    <div class="card p-3 border-0">
-                                        <div>
-                                            <i class="fa-solid fa-trophy"></i>
-                                            <span class="fs-5">Teacher's leaderboard</span>
-                                        </div>
-                                        <nav class="leaderboard-navbar">
-                                            <div class="student-info">
-                                                <ul class="list-unstyled mt-4">
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6 class="fw-normal">Pasty Brix-Nielsen</h6>
-                                                            <small class="primary-color">Productive</small>
-                                                        </span>
-                                                    </li>
-                                                    <hr>
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6  class="fw-normal">Huguette Corriveau</h6>
-                                                            <small class="primary-color">High Attitude</small>
-                                                        </span>
-                                                    </li>
-                                                    <hr>
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6  class="fw-normal">Bhanita Kalita</h6>
-                                                            <small class="primary-color">Helping other</small>
-                                                        </span>
-                                                    </li>
-                                                    <hr>
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6  class="fw-normal">Ahemad Daif</h6>
-                                                            <small class="primary-color">Mike</small>
-                                                        </span>
-                                                    </li>
-                                                    <hr>
-                                                    <li class="d-flex p-2">
-                                                        <img src="images/img-2.jpg" class="fluid" alt="">
-                                                        <span class="ms-3 lh-1">
-                                                            <h6  class="fw-normal">Stive Jobs</h6>
-                                                            <small class="primary-color">L</small>
-                                                        </span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4"> 
-                            <div class="card border-0">
-                                <div class="card-block birthday-block p-3">
-                                    <span class="card-title fs-5"><i class="fa fa-birthday-cake"></i> Celebrating birthday</span>
-                                    <div>
-                                        <div class="message-box" scroll-box="" id="birthdayCeleb">
-                                            <div class="message-widget message-scroll">
-                                                <span class="d-block text-center p- >No Data Available"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-lg-8 col-md-9">
-                            <div class="card border-0">
-                                <div class="card-block p-3">
-                                    <span class="card-title fs-5">
-                                        <i class="fa fa-link"></i> 
-                                        Quick links
-                                    </span>
-                                    <div class="row links-button pt-3">
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Messages </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> News Board </a>                        
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Events </a>                       
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Class Schedule</a>
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Mail / SMS</a>                         
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> MobileNotifications</a>
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Request vacation</a>
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Staff Attendance</a>
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Attendance</a>                          
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Reports </a>                          
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Exams List </a>                            
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Study Material</a>
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Assignments </a>                                
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Homework </a>                              
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Online exams</a>
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Students </a>                                 
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Classes Schedule</a>
-                                        </div>
-                                        <div class="col-md-4">
-                                        <a href="#" class="btn btn-success mb-3"> Media Center</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 my-4 ">
-                            <div class="row">
-                                <div class="col-lg-8 pe-0">
-                                    <div class="p-4 bg-white invoice-normal-chart">
-                                        <h2 class="font-medium text-inverse fs-4 fw-normal">
-                                            <i class="fa-solid fa-dollar-sign"></i> 
-                                            Invoices
-                                        </h2>
-                                        <table class="table table-hover">
+                            <div class="card bottom-items border-0">
+                                <div class="card-block">
+                                    <div class="academic-year-table">
+                                        <table class="table table-hover table-bordered">
                                             <thead>
                                                 <tr>
-                                                    <th><span class="fw-medium primary-color">#</span></th>
-                                                    <th><span class="fw-medium primary-color">Title</span></th>
-                                                    <th><span class="fw-medium primary-color">Status</span></th>
-                                                    <th><span class="fw-medium primary-color">Date</span></th>
-                                                    <th><span class="fw-medium primary-color">Due Date</span></th>
-                                                    <th><span class="fw-medium primary-color">Amount</span></th>
+                                                    <th class="p-3 text-color fw-medium">Role Title</th>
+                                                    <th class="p-3 text-color fw-medium">Role Description</th>
+                                                    <th class="p-3 text-color fw-medium">Operations</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-center">INVF-4</td>
-                                                    <td>School feeds fees</td>
-                                                    <td>
-                                                        <span class="btn btn-danger text-white statous-btn">UNPAID</span>
-                                                    </td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td>
-                                                        <span class="text-success p-0">$ 17.6</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center  ">INVF-3</td>
-                                                    <td>School feeds fees</td>
-                                                    <td>
-                                                        <span class="btn btn-danger text-white statous-btn">UNPAID</span>
-                                                    </td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td>
-                                                        <span class="text-success p-0">$ 17.6</span>
+                                                    <td class="p-3">Super Administrators</td>
+                                                    <td class="p-3"></td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center ">INVF-2</td>
-                                                    <td>School feeds fees</td>
-                                                    <td>
-                                                        <span class="btn btn-danger text-white statous-btn">UNPAID</span>
-                                                    </td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td>
-                                                        <span class="text-success p-0">$ 22</span>
-                                                    </td>
+                                                    <td class="p-3">Administrators</td>
+                                                    <td class="p-3">Default role for administrators</td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center  ">INVF-1</td>
-                                                    <td>School feeds fees</td>
-                                                    <td>
-                                                        <span class="btn btn-danger text-white statous-btn">UNPAID</span>
-                                                    </td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td>
-                                                        <span class="text-success p-0">$ 22</span>
-                                                    </td>
+                                                    <td class="p-3">Manager</td>
+                                                    <td class="p-3">French</td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-center">Recussing payment</td>
-                                                    <td>Admission, Feed</td>
-                                                    <td>
-                                                        <span class="btn btn-success text-white statous-btn">PAID</span>
-                                                    </td>
-                                                    <td class=" ">17/08/2017</td>
-                                                    <td class=" ">10/12/2019</td>
-                                                    <td>
-                                                        <span class="text-success p-0">$ 28.16</span>
-                                                    </td>
+                                                    <td class="p-3">Principal</td>
+                                                    <td class="p-3">Dutch</td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">Teacher</td>
+                                                    <td class="p-3">Default role for teachers</td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">Student</td>
+                                                    <td class="p-3">Default role for teachers</td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">Parents</td>
+                                                    <td class="p-3">Default role for teachers</td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">Accountant</td>
+                                                    <td class="p-3"></td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">Librarian</td>
+                                                    <td class="p-3"></td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">HR</td>
+                                                    <td class="p-3"></td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">Receptionist</td>
+                                                    <td class="p-3"></td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">Store Keeper</td>
+                                                    <td class="p-3"></td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3">Notification Sender</td>
+                                                    <td class="p-3"></td>
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                        </td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 ps-0 border-start">
-                                    <div class="invoice-barchart bg-white"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card border-0">
-                                        <div class="card-block p-4">
-                                            <span class="card-title fs-5 fw-normal"> 
-                                                <i class="fa-solid fa-volume-high"></i> News &amp; Events
-                                            </span>
-                                        </div>
-                                        <div class="slimScrollDiv">
-                                            <div class="table-responsive" scroll-box="" id="nwsEvts">
-                                                <table class="table table-hover">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="index.php/portal#newsboard/1" class="fw-light">
-                                                                    People Matter Employee Survey bb
-                                                                </a>
-                                                            </td>
-                                                            <td>
-                                                                <span class="btn btn-success text-center statous-btn news-btn"> 
-                                                                    News Board
-                                                                </span> 
-                                                                </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="index.php/portal#events/4" class="fw-light">
-                                                                    Family party
-                                                                </a>
-                                                            </td>
-                                                            <td>
-                                                                <span class="btn btn-info text-center statous-btn news-btn">
-                                                                    Events
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="index.php/portal#events/1" class="fw-light">
-                                                                    Artexpresy Exhib itionws
-                                                                </a>
-                                                            </td> 
-                                                            <td>
-                                                                <span class="btn btn-info text-center statous-btn news-btn">
-                                                                    Events
-                                                                </span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 ">
-                                        <div class="card p-3 border-0">
-                                            <div>
-                                                <i class="fa-solid fa-message"></i>
-                                                <span class="fs-5 fw-normal">Messages</span>
-                                            </div>
-                                            <nav class="message-navbar">
-                                                <div class="student-info">
-                                                    <ul class="list-unstyled mt-4">
-                                                        <li class="d-flex p-2">
-                                                            <img src="images/img-2.jpg" class="fluid" alt="">
-                                                            <span class="ms-3 lh-1">
-                                                                <h6>Brittany Babotts</h6>
-                                                                <small class="primary-color d-block fw-light">Hi</small>
-                                                                <small class="primary-color fw-light">09/09/2017 07.41 pm</small>
-                                                            </span>
-                                                        </li>
-                                                        <hr>
-                                                        <li class="d-flex p-2">
-                                                            <img src="images/img-2.jpg" class="fluid" alt="">
-                                                            <span class="ms-3 lh-1">
-                                                                <h6>Marani Solo</h6>
-                                                                <small class="primary-color d-block fw-light">hi</small>
-                                                                <small class="primary-color fw-light">10/09/2017 10.44 am</small>
-                                                            </span>
-                                                        </li>
-                                                        <hr>
-                                                        <li class="d-flex p-2">
-                                                            <img src="images/img-2.jpg" class="fluid" alt="">
-                                                            <span class="ms-3 lh-1">
-                                                                <h6>Rajai Daewich</h6>
-                                                                <small class="primary-color d-block fw-light">Hii</small>
-                                                                <small class="primary-color fw-light">09/09/2017 06.09 am</small>
-                                                            </span>
-                                                        </li>
-                                                        <hr>
-                                                        <li class="d-flex p-2">
-                                                            <img src="images/img-2.jpg" class="fluid" alt="">
-                                                            <span class="ms-3 lh-1">
-                                                                <h6>Mike Blumw</h6>
-                                                                <small class="primary-color d-block fw-light">M file bro</small>
-                                                                <small class="primary-color fw-light">09/09/2017 06.17 am</small>
-                                                            </span>
-                                                        </li>
-                                                        <hr>
-                                                        <li class="d-flex p-2">
-                                                            <img src="images/img-2.jpg" class="fluid" alt="">
-                                                            <span class="ms-3 lh-1">
-                                                                <h6>Alice Bean</h6>
-                                                                <small class="primary-color d-block fw-light">Hi boos</small>
-                                                                <small class="primary-color fw-light">10/09/2017 06.03</small>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                <div class="col-lg-4">
-                                    <div class="card border-0">
-                                        <div class="card-block p-3 meeting-block">
-                                            <span class="card-title fs-5 fw-normal">
-                                                <i class="fa-solid fa-video"></i> 
-                                                Meeting
-                                            </span>
-                                            <div>
-                                                <div class="message-box" scroll-box="" id="birthdayCeleb">
-                                                    <div class="message-widget message-scroll">
-                                                        <span class="d-block py-5 primary-color">
-                                                            No Meeting Available
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 py-4">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <div class="card border-0">
-                                        <div class="card-block p-3 pb-5">
-                                            <span class="card-title ng-binding fs-5 fw-normal"> 
-                                                <i class="fa fa-bar-chart-o"></i> 
-                                                What's your preferred OS ?
-                                            </span>
-                                            <div class="form-group">
-                                                <div class="radio pt-4 primary-color">
-                                                    Linux - 25%
-                                                    <div class="progress progress-striped">
-                                                        <div
-                                                            class="progress-bar bg-info progress-bar-striped w-25">
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                </div>
-                                                <div class="radio py-3 primary-color">
-                                                    Windows - 25%
-                                                    <div class="progress progress-striped">
-                                                        <div
-                                                            class="progress-bar bg-info progress-bar-striped w-25">
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                </div>
-                                                <div class="radio pb-3 primary-color">
-                                                    OS X - 50%
-                                                    <div class="progress progress-striped">
-                                                        <div
-                                                            class="progress-bar bg-info progress-bar-striped w-50">
-                                                        </div>
-                                                    </div>
-                                                    <br>
-                                                </div>
-                                                <div class="text-center primary-color">
-                                                    Total votes : 4
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card border-0">
-                                        <div class="card-block pt-3 px-4">
-                                            <span class="card-title ng-binding fs-5 fw-normal"> 
-                                                <i class="fa fa-bar-chart-o"></i> 
-                                                Calender
-                                            </span>
-                                            <div class="calendar fw-normal"></div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-10 offset-2">
-                <footer>
-                    <div class="footer-box border bg-white">
-                        All Rights Reserved. <a href="#"
-                        class="text-decoration-none text-primary">- School Terms</a>
-                    </div>
-                </footer>
+                <div class="col-10 offset-2">
+                    <footer>
+                        <div class="footer-box border bg-white">
+                            All Rights Reserved. <a href="#" class="text-decoration-none text-primary">- School
+                                Terms</a>
+                        </div>
+                    </footer>
+                </div>
             </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="css/dashboard.js"></script>
 </body>
 
 </html>

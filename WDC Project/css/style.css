@@ -2,18 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
 }
 
 body {
-    background: lightgray;
+    background: #f2f7f8;
+    font-family: 'Rubik', sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+.same-icon-color {
     color: #a6b7bf;
 }
 
+.diff-icon-color {
+    color: #54667a;
+}
+
+.primary-color {
+    color: #54667a;
+}
 
 ::-webkit-scrollbar {
     height: 4px;
@@ -27,17 +37,38 @@ a {
     border-radius: 10px;
 }
 
-.sidebar{
+/* Login Page - start */
+
+.login-page {
+    background-image: url(../images/login_image.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.resistration-form {
+    width: 100%;
+    height: 100%;
+    padding: 10% 33%;
+}
+
+.login-box {
+    width: 400px;
+}
+
+/* Login Page - end */
+
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
 }
-.logo-heading{
+
+.logo-heading {
     color: #54667a;
-    font-weight: 200;
+    font-size: 1.25rem;
 }
+
 .scrollable-bar {
-    position: relative;
     bottom: 0;
     height: 100vh;
     background: #fff;
@@ -45,9 +76,8 @@ a {
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
     text-align: center;
+    padding: 10px 0;
 }
 
 .logo-img {
@@ -55,32 +85,14 @@ a {
     border-radius: 50%;
 }
 
-.profile {
-    font-size: 1rem;
-    color: #54667a;
-    font-weight: 300;
-}
-
 .profile button {
     font-size: 1rem;
     color: #54667a;
-    font-weight: 300;
+    letter-spacing: 1px;
 }
 
-.profile-links {
-    position: relative;
-    display: table;
-    width: 100%;
-    font-weight: 300;
-    padding: 10px;
-}
-
-.profile-links.fa {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    font-size: 17px;
-    text-align: center;
+.profile-menu {
+    padding: 5px 0;
 }
 
 .profile-links .nav-item {
@@ -88,65 +100,40 @@ a {
 }
 
 .logo hr {
-    margin: 5px 0px;
+    margin: 2px 0px;
 }
 
-.sidebar-main-links {
-    position: relative;
-    display: table;
-    width: 100%;
-    font-weight: 300;
-    padding: 10px;
+.sidebar-main-item {
+    padding: 18px 10px;
+    font-size: 15px;
 }
 
-.sidebar-main-links .fa {
-    position: relative;
-    top: 14px;
-    width: 40px;
-    height: 40px;
-    font-size: 17px;
+.sidebar-main-item .fa {
     text-align: center;
+    margin: 0 11px;
 }
 
-.sidebar-main-links .nav-item {
-    position: relative;
-    top: 12px;
-    margin-left: 0px;
-    font-size: 1rem;
+.nav-item {
     color: #54667a;
+    letter-spacing: 0.5px;
 }
 
-.sub-items {
-    position: relative;
-    display: table;
-    width: 100%;
-    font-weight: 300;
-    padding: 20px 10px;
-}
-
-.sub-items .fa {
-    position: relative;
-    width: 40px;
-    text-align: center;
-    color: #a6b7bf;
-}
-
-.sub-items button {
+.sidebar-main-item button {
     padding: 0;
     color: #54667a;
+    font-size: 15px;
 }
 
 .sidebar-sub-links {
-    position: relative;
-    top: 12px;
     font-size: 1rem;
 }
 
 .sidebar-sub-links a {
     color: #54667a;
-    width: 100%;
-    padding: 10px;
     display: block;
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
 }
 
 .bottom-links-div {
@@ -157,50 +144,40 @@ a {
 }
 
 .bottom-main-links {
-    position: relative;
-    display: table;
-    width: 100%;
-    font-weight: 300;
-    padding: 10px;
+    padding: 15px 0;
 }
 
 .bottom-main-links .fa {
-    position: relative;
-    top: 14px;
     width: 57px;
-    height: 40px;
     font-size: 17px;
     text-align: center;
 }
 
-.sub-items .fa-chevron-right {
-    position: relative;
-    right: px;
-    color: #a6b7bf;
+.sidebar-main-item .fa-chevron-right {
+    float: right;
+    padding-top: 5px;
 }
-.top-navbar{
-    position: relative;
+
+.top-navbar {
     padding: 22px;
     background-image: linear-gradient(to right, #533fd0, #840fb5);
-    color: #a6b7bf;
 }
-.top-navbar img{
+
+.top-navbar img {
     width: 30px;
     border-radius: 50px;
 }
 
-.sidebar-list{
+.sidebar-list {
     margin-bottom: 150px;
 }
 
-.sidebar-main-links:hover {
-    color: #533fd0;
-    background: #eee;
+footer {
+    position: relative;
+    bottom: 0;
 }
 
-.footer-box{
-    position: relative;
-    font-family: 'Rubik', sans-serif;
+.footer-box {
     overflow-x: hidden;
     color: #54667a;
     font-weight: 300;
@@ -208,12 +185,22 @@ a {
     padding: 17px 15px;
 }
 
-.profile-links:hover {
+.sidebar-main-item:hover {
+    background: #eee;
+    color: #54667a;
+    ;
+}
+
+.sidebar-main-links :hover {
     color: #533fd0;
     background: #eee;
 }
 
-.sub-items:hover {
+.slider-both-items :hover {
+    color: #533fd0;
+}
+
+.profile-links:hover {
     color: #533fd0;
     background: #eee;
 }
@@ -223,7 +210,13 @@ a {
     background: #eee;
 }
 
-.sidebar-sub-links a:hover {
+.items-heading {
+    font-size: 22px;
+    color: #7460ee !important;
+}
+
+/* Dasboard - Start */
+.main-heading {
     color: #533fd0;
     background: #fff;
 }
@@ -348,6 +341,127 @@ a {
 .calendar-inner {
     padding: 10px 10px;
 }
+}
+
+.user-info {
+    padding: 20px;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.main-heading {
+    color: #533fd0;
+}
+
+.user-info {
+    padding: 20px;
+}
+
+.user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.user-info-item small {
+    font-size: 14px;
+}
+
+.user-info-button button {
+    width: 90%;
+    margin: 10px 20px;
+}
+
+.leaderboard-navbar {
+    position: relative;
+    height: 300px;
+    overflow-x: hidden;
+}
+
+.leaderboard-navbar small {
+    font-size: 12px;
+}
+
+.student-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.birthday-block {
+    position: relative;
+    width: auto;
+    height: 410px;
+}
+
+.links-button a {
+    width: 100%;
+}
+
+.invoice-normal-chart {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.invoice-normal-chart td {
+    color: #54667a;
+    letter-spacing: 0.7px;
+    padding: 9px;
+}
+
+.statous-btn {
+    font-size: 75%;
+    padding: 2px 10px;
+}
+
+.invoice-barchart {
+    width: 360px;
+    height: 476px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.slimScrollDiv {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 300px;
+}
+
+.news-btn {
+    width: 90px;
+}
+
+.message-navbar {
+    position: relative;
+    height: 320px;
+    overflow-x: hidden;
+}
+
+.message-navbar small {
+    font-size: 12px;
+}
+
+.meeting-block {
+    height: 380px;
+}
+
+.calendar {
+    position: relative;
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    height: 360px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 15px;
+}
+
 
 .calendar .calendar-inner .calendar-body {
     display: grid;
@@ -362,6 +476,10 @@ a {
     border: 1px solid #EEEEEE;
     /* margin: 10px 2px 0px; */
     
+    min-height: 20px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
 }
 
 .calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
@@ -457,6 +575,7 @@ a {
 
 .calendar .calendar-inner .calendar-controls .calendar-next a svg path,
 .calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path {
     fill: var(--next-prev-arrow-color);
 }
 
@@ -479,3 +598,127 @@ a {
 }
 /* end Calendar page css added by Esha */
 
+/* Dasboard - End */
+
+/* Administrative Task - Start */
+
+.top-items-heading h5 {
+    font-size: 18px;
+}
+
+.top-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group-addon {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #464a4c;
+    text-align: center;
+    background-color: #eceeef;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+}
+
+.academic-year-table button {
+    border-radius: 100%;
+}
+
+.academic-year-table i {
+    font-size: 13px;
+}
+
+.academic-year-table th {
+    color: #54667a;
+    letter-spacing: 0.5px;
+}
+
+.academic-year-table td {
+    color: #54667a;
+    letter-spacing: 0.5px;
+}
+
+.academic-year-table img {
+    height: 40px;
+    border-radius: 100%;
+}
+
+.dbExport-btn button {
+    padding: 15px 90px 15px 10px;
+}
+
+/* Administrative Task  - End */
+
+/* Employee , Mypayroll,payroll start */
+
+.user-img {
+    width: 35px;
+    height: 35px;
+}
+
+
+.tbl {
+    border: 1px solid #eceeef;
+}
+
+.table thead th {
+    border: 0px;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.btn-circle {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.table td,
+.table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+
+.circle {
+    width: 43px;
+    height: 43px;
+    background-color: green;
+   
+    margin: 0px;
+    font-size: 16px;
+}
+/* Employee , Mypayroll,payroll  end */
+
+/* Report start */
+.icons {
+     padding-top: 10px;
+    text-align: center;
+    
+}
+.card{
+    border: none;
+}
+h5{
+    font-size: 16px;
+}
+/* Report end */
+.add-heading-color {
+    color: #a94442;
+}
+
+.add-input-border {
+    border-color: #a94442;
+}
+
+.add-items-color {
+    color: #54667a;
+}
+
+/* Administrative Task  - End */

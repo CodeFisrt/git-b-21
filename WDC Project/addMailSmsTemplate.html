@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="gaigDemo">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,6 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/calendar.css">
 </head>
 
 <body>
@@ -501,17 +500,17 @@
                                     <i class="fa-solid fa-chevron-right same-icon-color"></i>
                                     <div class="collapse" id="administrative-collapse">
                                         <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
-                                            <li class="sidebar-sub-links"><a href="acadmicYear.html">Acadmic Years</a></li>
-                                            <li class="sidebar-sub-links"><a href="promotion.html">Promotions</a></li>
-                                            <li class="sidebar-sub-links"><a href="mailSmsTemplate.html">Mail/SMS Templates</a></li>
-                                            <li class="sidebar-sub-links"><a href="polls.html">Polls</a></li>
-                                            <li class="sidebar-sub-links"><a href="dormitories.html">Dormitories</a></li>
-                                            <li class="sidebar-sub-links"><a href="generalSetting.html">General Settings</a></li>
-                                            <li class="sidebar-sub-links"><a href="languages.html">Languages</a></li>
-                                            <li class="sidebar-sub-links"><a href="administrators.html">Administrators</a></li>
-                                            <li class="sidebar-sub-links"><a href="permissionRoles.html">Permission Roles</a></li>
-                                            <li class="sidebar-sub-links"><a href="schoolTerms.html">School Terms</a></li>
-                                            <li class="sidebar-sub-links"><a href="dbExport.html">DB Exports</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Acadmic Years</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Promotions</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Mail/SMS Templates</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Polls</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Dormitories</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">General Settings</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Languages</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Administrators</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Permission Roles</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">School Terms</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">DB Exports</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -547,16 +546,75 @@
                             <ul class="d-flex list-unstyled m-0">
                                 <li class="px-3"><a href="#"><img src="images/img-1.jpg"></a></li>
                                 <li class="px-3"><a href="#"><i class="fa fa-language same-icon-color"></i></a></li>
-                                <li class="px-3"><a href="loginPage.html"><i class="fa fa-power-off same-icon-color"></i></a></li>
+                                <li class="px-3"><a href="#"><i class="fa fa-power-off same-icon-color"></i></a></li>
                                 <li class="px-3"><a href="#"><i class="fa-solid fa-border-all same-icon-color"></i></a>
                                 </li>
                             </ul>
                         </nav>
                     </header>
                 </div>
-                <div class="col-10 offset-2">
-                    <!-- Page Content -->
-                    <h1>Page Content Goes Here</h1>
+                <div class="col-10 offset-2 px-4 pb-5">
+                    <div class="school-terms-box">
+                        <h3 class="items-heading py-4 m-0 fw-normal">Mail / SMS Templates</h3>
+                        <div class="list-acadmic-year p-4 bg-white rounded">
+                            <div class="top-items p-2">
+                                <div class="top-items-heading">
+                                    <h5 class="fw-normal">Add template</h5>
+                                </div>
+                                <div class="d-flex">
+                                    <button class="btn btn-danger">Cancle edit</button>
+                                </div>
+                            </div>
+                            <div class="bottom-items">
+                                <form class="form-horizontal" name="addDorm" role="form">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 text-end add-items-color">Template title</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="dormitory" class="form-control" placeholder="Dormitory Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row py-4">
+                                        <label class="col-sm-2 text-end add-items-color">Mail templates</label>
+                                        <div class="col-sm-10">
+                                            <div class="with-bg" ng-controller="DemoCtrl as demo" class="demo">
+                                                <div class="wrapper">
+                                                    <div class="navbar navbar-static-top">
+                                                      <div class="navbar-inner"></div>
+                                                    </div>
+                                                    <div class="navhelper">
+                                                      <div class="navhelper-inner"></div>
+                                                    </div>
+                                                
+                                                    <div class="gaig-main container">
+                                                      <div class="gaig-sidebar">
+                                                        <div class="gaig-sidebar-inner">
+                                                        </div>
+                                                      </div>
+                                                      <div class="gaig-stage">
+                                                        <div class="gaig-stage-inner">
+                                                          <div class="pad20">
+                                                            <form>
+                                                              <textarea name="editor1" id="editor1" rows="10" cols="80">
+                                                                This is my textarea to be replaced with CKEditor.
+                                                              </textarea>
+                                                            </form>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>       
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="offset-sm-2 col-sm-10">
+                                            <button type="submit" class="btn btn-info text-white" disabled="disabled">Add template</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>        
                 </div>
                 <div class="col-10 offset-2">
                     <footer>
@@ -569,7 +627,12 @@
             </div>
         </div>    
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  <script src="//cdn.gaic.com/cdn/ui-bootstrap/0.58.0/js/lib/ckeditor/ckeditor.js"></script>
+  <script src="//cdn.gaic.com/cdn/ui-bootstrap/0.58.0/js/lib/jquery.min.js"></script>
+  <script src="//cdn.gaic.com/cdn/ui-bootstrap/0.58.0/js/lib/angular.min.js"></script>
+  <script src="//cdn.gaic.com/cdn/ui-bootstrap/0.58.0/js/gaig-ui-bootstrap.js"></script>
+  <script src="css/schoolTerms.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
