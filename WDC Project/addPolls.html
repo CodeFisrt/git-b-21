@@ -57,7 +57,7 @@
                                         </li>
                                         <hr>
                                         <li class="profile-menu">
-                                            <a class="profile-links dropdown-item" href="loginPage.html">
+                                            <a class="profile-links dropdown-item" href="#">
                                                 <i class="fa fa-power-off diff-icon-color"></i>
                                                 <span class="nav-item">Logout</span>
                                             </a>
@@ -67,7 +67,7 @@
                             </div>
                             <ul class="sidebar-list list-unstyled">
                                 <li class="sidebar-main-item">
-                                    <a href="dashboard.html" class="sidebar-main-links">
+                                    <a href="#" class="sidebar-main-links">
                                         <i class="fa fa-solid fa-gauge-high same-icon-color"></i>
                                         <span class="nav-item">Dashboard</span>
                                     </a>
@@ -232,7 +232,7 @@
                                     <div class="collapse" id="employees-collapse">
                                         <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
                                             <li class="sidebar-sub-links"><a href="employee.html">Employees</a></li>
-                                            <li class="sidebar-sub-links"><a href="reports.html">Teachers</a></li>
+                                            <li class="sidebar-sub-links"><a href="teacher.html">Teachers</a></li>
                                             <li class="sidebar-sub-links"><a href="departments.html">Departments</a></li>
                                             <li class="sidebar-sub-links"><a href="designation.html">Designation</a></li>
                                         </ul>
@@ -499,17 +499,17 @@
                                     <i class="fa-solid fa-chevron-right same-icon-color"></i>
                                     <div class="collapse" id="administrative-collapse">
                                         <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
-                                            <li class="sidebar-sub-links"><a href="acadmicYear.html">Acadmic Years</a></li>
-                                            <li class="sidebar-sub-links"><a href="promotion.html">Promotions</a></li>
-                                            <li class="sidebar-sub-links"><a href="mailSmsTemplate.html">Mail/SMS Templates</a></li>
-                                            <li class="sidebar-sub-links"><a href="polls.html">Polls</a></li>
-                                            <li class="sidebar-sub-links"><a href="dormitories.html">Dormitories</a></li>
-                                            <li class="sidebar-sub-links"><a href="generalSetting.html">General Settings</a></li>
-                                            <li class="sidebar-sub-links"><a href="languages.html">Languages</a></li>
-                                            <li class="sidebar-sub-links"><a href="administrators.html">Administrators</a></li>
-                                            <li class="sidebar-sub-links"><a href="permissionRoles.html">Permission Roles</a></li>
-                                            <li class="sidebar-sub-links"><a href="schoolTerms.html">School Terms</a></li>
-                                            <li class="sidebar-sub-links"><a href="dbExport.html">DB Exports</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Acadmic Years</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Promotions</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Mail/SMS Templates</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Polls</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Dormitories</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">General Settings</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Languages</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Administrators</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Permission Roles</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">School Terms</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">DB Exports</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -545,200 +545,57 @@
                             <ul class="d-flex list-unstyled m-0">
                                 <li class="px-3"><a href="#"><img src="images/img-1.jpg"></a></li>
                                 <li class="px-3"><a href="#"><i class="fa fa-language same-icon-color"></i></a></li>
-                                <li class="px-3"><a href="loginPage.html"><i class="fa fa-power-off same-icon-color"></i></a></li>
+                                <li class="px-3"><a href="#"><i class="fa fa-power-off same-icon-color"></i></a></li>
                                 <li class="px-3"><a href="#"><i class="fa-solid fa-border-all same-icon-color"></i></a>
                                 </li>
                             </ul>
                         </nav>
                     </header>
                 </div>
-                <div class="col-10 offset-2 px-4 mb-5">
-                    <div class="roles-box">
-                        <h3 class="items-heading py-4 m-0 fw-normal">Permission Roles</h3>
+                <div class="col-10 offset-2 px-4">
+                    <div class="acadmic-year-box">
+                        <h3 class="items-heading py-4 m-0 fw-normal">Polls</h3>
                         <div class="list-acadmic-year p-4 bg-white rounded">
                             <div class="top-items p-2">
+                                <div class="top-items-heading">
+                                    <h5 class="fw-normal">Add Polls</h5>
+                                </div>
                                 <div class="d-flex">
-                                    <div class="me-2">
-                                        <div class="input-group input-group-sm">
-                                            <input type="text" name="table_search" placeholder="Search"class="form-control m-0">
-                                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-success"><a href="addPermissionRolls.html" class="text-white">Add roles</a></button>
+                                    <button class="btn btn-danger">Cancle add</button>
                                 </div>
                             </div>
-                            <div class="card bottom-items border-0">
-                                <div class="card-block">
-                                    <div class="academic-year-table">
-                                        <table class="table table-hover table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th class="p-3 text-color fw-medium">Role Title</th>
-                                                    <th class="p-3 text-color fw-medium">Role Description</th>
-                                                    <th class="p-3 text-color fw-medium">Operations</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="p-3">Super Administrators</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Administrators</td>
-                                                    <td class="p-3">Default role for administrators</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Manager</td>
-                                                    <td class="p-3">French</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Principal</td>
-                                                    <td class="p-3">Dutch</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Teacher</td>
-                                                    <td class="p-3">Default role for teachers</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Student</td>
-                                                    <td class="p-3">Default role for teachers</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Parents</td>
-                                                    <td class="p-3">Default role for teachers</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Accountant</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Librarian</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">HR</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Receptionist</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Store Keeper</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">Notification Sender</td>
-                                                    <td class="p-3"></td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-info">
-                                                            <i class="fa fa-pencil text-white"></i>
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-                                                            <i class="fa fas fa-trash-alt text-white"></i>
-                                                        </button>
-                                                        </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                            <div class="bottom-items">
+                                <form class="form-horizontal" name="addPoll">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 text-end add-heading-color">Poll title * </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="pollTitle" class="form-control add-input-border" placeholder="Poll title">
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="form-group row py-4">
+                                        <label class="col-sm-2 text-end add-items-color">Poll Options</label>
+                                        <div class="col-sm-10">
+                                            <button type="button" class="btn btn-light text-black">New Option</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row py-3">
+                                        <label class="col-sm-2 text-end add-heading-color">Poll target</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-select add-input-border" name="pollTarget">
+                                                <option value="None"></option>
+                                                <option value="all" class="ng-binding">All</option>
+                                                <option value="teacher" class="ng-binding">Teachers</option>
+                                                <option value="student" class="ng-binding">Students</option>
+                                                <option value="parent" class="ng-binding">Parents</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="offset-sm-2 col-sm-10">
+                                            <button type="submit" class="btn btn-info text-white" disabled="disabled">Add poll</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
