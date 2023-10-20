@@ -173,10 +173,15 @@ a {
 }
 
 footer {
-    position: relative;
+    position: sticky;
     bottom: 0;
+    width: 100%;
 }
-
+.without-content {
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+}
 .footer-box {
     overflow-x: hidden;
     color: #54667a;
@@ -722,3 +727,5 @@ h5{
 }
 
 /* Administrative Task  - End */
+/* User-Image */
+
