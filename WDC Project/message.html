@@ -612,76 +612,96 @@
                 <div class="col-10 offset-2 px-4 mb-5">
                     <div>
                         <div>
-                            <h3 class="py-3 items-heading fw-normal">Assignment</h3>
+                            <h3 class="items-heading py-4 m-0 fw-normal">
+                                Message
+                            </h3>
                         </div>
                         <div class="p-4 bg-white rounded">
-                            <div class="row top-items p-2">
-                                <div class="col-md-6 top-items-heading">
-                                    <h5 class="fw-normal">List of Assignment</h5>
+                            <div class=" row top-items p-2 d-flex align-items-center">
+                                <div class="col-md-4">
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="ps-5 pe-5 btn btn-danger" title="Compose Message" type="button">Compose Message</button>
+                                      </div>
                                 </div>
-                                <div class="col-md-6 d-flex">
-                                    <div class="ms-auto">
+                                <div class="col-md-5">
+                                    <button type="button" title="Check All" class="btn btn-outline-secondary  m-2">
+                                        <i class="fa fa-check"></i>
+                                    </button>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" title="Mark as read" class="btn btn-outline-secondary ">
+                                            <i class="fa fa-eye"></i>
+                                        </button>
+                                        <button type="button" title="Mark as unread" class="btn btn-outline-secondary ">
+                                            <i class="fa-regular fa-eye-slash"></i>
+                                        </button>
+                                        <button type="button" title="delete" class="btn btn-outline-secondary ">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" >
+                                    <div class="ms-5">
                                         <div class="input-group input-group-sm">
-                                            <input type="text" placeholder="Search"class="form-control">
-                                            <span class="input-group-addon">
-                                                <i class="fa fa-search"></i>
-                                            </span>
+                                            <input type="text" title="Search" name="table_search" placeholder="Search"
+                                                class="form-control m-0">
+                                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
                                         </div>
                                     </div>
-                                    <div class="ms-2">
-                                        <button class="btn btn-success">Add Assignment</button>
-                                    </div>
-                                    
                                 </div>
                             </div>
                             <div class="bottom-items">
                                 <div class="card">
                                     <div class="academic-year-table">
                                         <table class="table table-hover tabel-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th class="p-3 text-color fw-medium">ID</th>
-                                                    <th class="p-3 text-color fw-medium">Assignment Title</th>
-                                                    <th class="p-3 text-color fw-medium">Assignment Description</th>
-                                                    <th class="p-3 text-color fw-medium">Assignment Deadline</th>
-                                                    <th class="p-3 text-color fw-medium">Operations</th>
-                                                </tr>
-                                            </thead>
-
                                             <tbody>
-                                                <tr>
-                                                    <td class="p-3">1</td>
-                                                    <td class="p-3">Assignment 2</td>
-                                                    <td class="p-3">
-                                                        <p>Assignment 3cercerc</p>
-                                                        <p><span class="bg-warning">´rce</span></p>
-                                                        <p><span class="bg-warning">®c</span></p>
-                                                        <p>´®cercrecerc</p>
+                                                <tr class="text-align-center">
+                                                    <td class=" p-3 pe-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        </div>
                                                     </td>
-                                                    <td class="p-3">28/05/2016</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-warning"><i class="fa fa-cloud-download text-white"></i></button>
-                                                        <button type="button" class="btn btn-success"><i class="fa fa-check text-white"></i></button>
-                                                        <button type="button" class="btn btn-info"><i class="fa fa-upload text-white"></i></button>
-                                                        <button type="button" class="btn btn-danger"><i class="fa fa-trash text-white"></i></button>
-                                                        </br>
-                                                        <button type="button" class="btn btn-info"><i class="fa fa-pencil text-white"></i></button>
-                                                    </td>
+                                                    <td class="p-3"><img src="https://mdbootstrap.com/img/new/avatars/6.jpg" alt=""><span class="m-2">Sansa taylor</span> </td>
+                                                    <td class="p-3">Lorem, ipsum dolor.</td>
+                                                    <td class="p-3">10/09/2017 07:03 am</td>
                                                 </tr>
-
                                                 <tr>
-                                                    <td class="p-3">2</td>
-                                                    <td class="p-3">Assignment 2</td>
-                                                    <td class="p-3">Assignment 2</td>
-                                                    <td class="p-3">28/05/2016</td>
-                                                    <td class="p-3">
-                                                        <button type="button" class="btn btn-warning"><i class="fa fa-cloud-download text-white"></i></button>
-                                                        <button type="button" class="btn btn-success"><i class="fa fa-check text-white"></i></button>
-                                                        <button type="button" class="btn btn-info"><i class="fa fa-upload text-white"></i></button>
-                                                        <button type="button" class="btn btn-danger"><i class="fa fa-trash text-white"></i></button>
-                                                        </br>
-                                                        <button type="button" class="btn btn-info"><i class="fa fa-pencil text-white"></i></button>
+                                                    <td class=" p-3 pe-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        </div>
+                                                    </td><td class="p-3"><img src="https://mdbootstrap.com/img/new/avatars/1.jpg" alt=""><span class="m-2">Chie stark</span></td>
+                                                    <td class="p-3">Lorem ipsum dolor sit amet consectetur.</td>
+                                                    <td class="p-3">10/09/2017 08:03 pm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3 pe-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                                        </div>
                                                     </td>
+                                                    <td class="p-3"><img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt=""><span class="m-2">John Doe</span></td>
+                                                    <td class="p-3">Lorem, ipsum dolor.</td>
+                                                    <td class="p-3">10/09/2017 10:03 am</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3 pe-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-3"><img src="https://mdbootstrap.com/img/new/avatars/3.jpg" alt=""> <span class="m-2">Alice Bean</span></td>
+                                                    <td class="p-3">Lorem, ipsum.</td>
+                                                    <td class="p-3">09/09/2017 11:03 pm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-3 pe-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-3 m-1"><img src="https://mdbootstrap.com/img/new/avatars/4.jpg" alt=""><span class="m-1">Natalie walker</span></td>
+                                                    <td class="p-3">Lorem ipsum dolor sit amet.</td>
+                                                    <td class="p-3">08/09/2017 12:03 am</td>
                                                 </tr>
                                             </tbody>
 
