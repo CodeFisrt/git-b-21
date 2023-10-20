@@ -177,11 +177,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 .without-content {
     position: absolute !important;
     bottom: 0;
     width: 100%;
 }
+
 .footer-box {
     overflow-x: hidden;
     color: #54667a;
@@ -552,24 +554,28 @@ footer {
     width: 43px;
     height: 43px;
     background-color: green;
-   
+
     margin: 0px;
     font-size: 16px;
 }
+
 /* Employee , Mypayroll,payroll  end */
 
 /* Report start */
 .icons {
-     padding-top: 10px;
+    padding-top: 10px;
     text-align: center;
-    
+
 }
-.card{
+
+.card {
     border: none;
 }
-h5{
+
+h5 {
     font-size: 16px;
 }
+
 /* Report end */
 .add-heading-color {
     color: #a94442;
@@ -584,3 +590,69 @@ h5{
 }
 
 /* Administrative Task  - End */
+
+/* vacation module start*/
+
+.heading-main {
+    color: #7460ee;
+    font-size: large;
+    margin-top: 20px;
+}
+
+.input-group {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.form-group {
+    margin-left: 110px;
+}
+
+.calendar-2 {
+    width: 90%;
+    margin-left: 130px;
+}
+
+.button-1 {
+    margin-left: 180px;
+}
+
+.footer-box {
+    margin-top: 320px;
+}
+
+.user-image {
+    height: 30px;
+    width: 30px;
+}
+
+.image-circle {
+    border-radius: 100%;
+}
+
+.heading {
+    color: #533fd0;
+    font-size: large;
+    margin-top: 20px;
+}
+
+.heading-2 {
+    margin-left: 258px;
+}
+
+.content-footer {
+    margin-top: 130px;
+    margin-left: -210px;
+}
+
+.heading-1 {
+    color: #7460ee;
+    font-size: larger;
+    margin-top: 30px;
+}
+
+.table-1 p {
+    color: #7460ee;
+}
+
+/* vacation module End*/
