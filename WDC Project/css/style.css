@@ -223,6 +223,129 @@ footer {
 /* Dasboard - Start */
 .main-heading {
     color: #533fd0;
+    background: #fff;
+}
+
+/* start css of classes schedule Page by Esha */
+.classes-text {
+    color: #7460EE;
+}
+.classes-card-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.classes-search-icon {
+    position: relative;
+    right: 4px;
+    background-color: #EBEEEF;
+    padding: 6px;
+}
+.classes-input-div {
+    border: 1px solid #D9D9D9;
+    outline-color: #5CB3FD;
+    padding: 2px;
+}
+.classes-btn-size {
+    border-radius: 100%;
+    background-color:#009efb;
+}
+.classes-list-icon {
+    color: white;
+}
+.classes-align-div {
+    text-align: left;
+}
+/* end css of classes schedule Page by Esha */
+
+/* start online exams page css added by Esha */
+.online-exam-wrap {
+    padding-bottom: 260px;
+}
+.online-exam-header {
+    color: #7460EE;
+}
+.online-card-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.online-search-icon {
+    border: 1px solid #D9D9D9;
+    position: relative;
+    right: 5px;
+    background-color: #EBEEEF;
+    padding: 6px;
+}
+.online-input-div {
+    border: 1px solid #D9D9D9;
+    outline-color: #5CB3FD;
+    padding: 2px;
+}
+.online-btn-size {
+    border-radius: 100%;
+    background-color:#009efb;
+    border: none;
+}
+.online-btn-size:hover  {
+    background-color: #5CB3FD;
+}
+.online-btn-size-check {
+    border-radius: 100%;
+    border: none;
+}
+.online-btn-size-check:hover {
+    background-color: #739D75;
+}
+.online-btn-size-check-trash {
+    border-radius: 100%;
+    border: none;
+}
+.online-btn-size-check-trash:hover {
+    background-color: #FF625B;
+}
+
+/* end online exams page css added by Esha */
+
+/* start Calendar page css added by Esha */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --calendar-bg-color: #fff;
+    --calendar-font-color: #333333;
+    /* --weekdays-border-bottom-color: #404040; */
+    --calendar-date-hover-color: #EEEEEE;
+    --calendar-current-date-color: #fff;
+    --calendar-today-color: linear-gradient(to bottom, #fff, #fff);
+    --calendar-today-innerborder-color: transparent;
+    --calendar-nextprev-bg-color: transparent;
+    --next-prev-arrow-color : #333333;
+    --calendar-border-radius: 10px;
+    --calendar-prevnext-date-color: #484848;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.calendar {
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    position: relative;
+    max-width: 100%; /*change as per your design need */
+    min-width: 100%;
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: var(--calendar-border-radius);
+}
+
+.calendar-inner {
+    padding: 10px 10px;
+}
 }
 
 .user-info {
@@ -353,6 +476,11 @@ footer {
 
 .calendar .calendar-inner .calendar-body div {
     padding: 4px;
+    min-height: 150px;
+    /* line-height: 50px; */
+    border: 1px solid #EEEEEE;
+    /* margin: 10px 2px 0px; */
+    
     min-height: 20px;
     line-height: 20px;
     border: 1px solid transparent;
@@ -451,6 +579,7 @@ footer {
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
 .calendar .calendar-inner .calendar-controls .calendar-prev a svg path {
     fill: var(--next-prev-arrow-color);
 }
@@ -459,6 +588,20 @@ footer {
 .calendar .calendar-inner .calendar-body .next-dates {
     color: var(--calendar-prevnext-date-color);
 }
+
+.calendar .calendar-inner .calendar-body .prev-dates:hover,
+.calendar .calendar-inner .calendar-body .next-dates:hover {
+  border: 1px solid transparent;
+  pointer-events: none;
+}
+
+.calendar-today-div {
+    margin-left: 550px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+}
+/* end Calendar page css added by Esha */
 
 /* Dasboard - End */
 
