@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School of WDC | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../WDC Project/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <div class="sidebar bg-white shadow">
+                        <h5 class="logo-heading text-center m-4">School of WDC</h5>
+                        <hr>
+                        <nav class="scrollable-bar">
+                            <div class="logo">
+                                <div class="logo-img-wrap">
+                                    <img src="images/img-1.jpg" alt="" class="logo-img">
+                                </div>
+                                <div class="profile dropdown">
+                                    <button class="border border-0 dropdown-toggle bg-white" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Brittany Babotts
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="profile-menu">
+                                            <a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-wallet diff-icon-color"></i>
+                                                <span class="nav-item">My Invoice</span>
+                                            </a>
+                                        </li>
+                                        <li class="profile-menu">
+                                            <a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-message diff-icon-color"></i>
+                                                <span class="nav-item">Messages</span>
+                                            </a>
+                                        </li>
+                                        <hr>
+                                        <li class="profile-menu">
+                                            <a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-solid fa-gear diff-icon-color"></i>
+                                                <span class="nav-item">Account Setting</span>
+                                            </a>
+                                        </li>
+                                        <hr>
+                                        <li class="profile-menu">
+                                            <a class="profile-links dropdown-item" href="#">
+                                                <i class="fa fa-power-off diff-icon-color"></i>
+                                                <span class="nav-item">Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="sidebar-list list-unstyled">
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-gauge-high same-icon-color"></i>
+                                        <span class="nav-item">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-book-bookmark same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#office-collapse"
+                                        aria-expanded="false">
+                                        Welcome Office
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+
+                                    <div class="collapse" id="office-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Visitors</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Phone Cell</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Postal</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Content Message</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Enquiries</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Complaints</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Office Categiries</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-book-bookmark same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#pages-collapse"
+                                        aria-expanded="false">
+                                        Static Pages
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="pages-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Control Pages</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">School Module</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">School Dashboard</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-video same-icon-color"></i>
+                                        <span class="nav-item">Online Meating</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-message same-icon-color"></i>
+                                        <span class="nav-item">Messages</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-mobile-screen-button same-icon-color"></i>
+                                        <span class="nav-item">Mail/SMS</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-bell same-icon-color"></i>
+                                        <span class="nav-item">Mobile Notification</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-regular fa-calendar-days same-icon-color"></i>
+                                        <span class="nav-item">Calender</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-clock same-icon-color"></i>
+                                        <span class="nav-item">Classes Schedual</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-list-check same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#attendance-collapse"
+                                        aria-expanded="false">
+                                        Attendance
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="attendance-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Take Attendance</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Attendance Report</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-check same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#staff-collapse"
+                                        aria-expanded="false">
+                                        Staff Attendance
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="staff-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Take Attendance</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Attendance Report</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-plane same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#vacation-collapse"
+                                        aria-expanded="false">
+                                        Vacation
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="vacation-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Request Vacation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Approve Vacation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">My Vacation</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-book-open-reader same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#library-collapse"
+                                        aria-expanded="false">
+                                        Library
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="library-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Issue Book</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Return Book</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">List Book</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Manage Subscription</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-photo-film same-icon-color"></i>
+                                        <span class="nav-item">Media Center</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <i class="fa fa-solid fa-briefcase same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#employees-collapse"
+                                        aria-expanded="false">
+                                        Employees
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="employees-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Employees</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Teachers</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Departments</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Designation</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-users same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#students-collapse"
+                                        aria-expanded="false">
+                                        Students
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="students-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Students</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Students Admission</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Students Categiries</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-user-group same-icon-color"></i>
+                                        <span class="nav-item">Parents</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-box same-icon-color"></i>
+                                        <span class="nav-item">Grade Level</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-cloud-arrow-up same-icon-color"></i>
+                                        <span class="nav-item">Study Material</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-file same-icon-color"></i>
+                                        <span class="nav-item">Assignments</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-list-check same-icon-color"></i>
+                                        <span class="nav-item">Exam Lists</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-network-wired same-icon-color"></i>
+                                        <span class="nav-item">Online Exams</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-newspaper same-icon-color "></i>
+                                        <span class="nav-item">News Boards</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-regular fa-calendar-plus same-icon-color"></i>
+                                        <span class="nav-item">Events</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-building-columns same-icon-color"></i>
+                                        <span class="nav-item">My Payroll</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-building-columns same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#payrool-collapse"
+                                        aria-expanded="false">
+                                        Payrool
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="payrool-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Make Payment</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">User Salary</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Salary Base</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Hourly Base</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-dollar-sign same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#accounting-collapse"
+                                        aria-expanded="false">
+                                        Accounting
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="accounting-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Invoices</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Due Invoices</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Free Groups</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Free Types</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Free Allocation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Free Discount</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-dollar-sign same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#expenses-collapse"
+                                        aria-expanded="false">
+                                        Expenses
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="expenses-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Expenses</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Expenses Categories</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-money-bill-1 same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#income-collapse"
+                                        aria-expanded="false">
+                                        Income
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="income-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Income</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Income Categories</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-network-wired same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#inventary-collapse"
+                                        aria-expanded="false">
+                                        Inventary
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="inventary-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Issue/Return</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Items Stock</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Inventary Categiries</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Suppliers</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Stores</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Item Coding</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-network-wired same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#classes-collapse"
+                                        aria-expanded="false">
+                                        Classes
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="classes-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Classes</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Section</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-book-open-reader same-icon-color"></i>
+                                        <span class="nav-item">Subjects</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-hotel same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#hostel-collapse"
+                                        aria-expanded="false">
+                                        Hostel Managements
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="hostel-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Hostel</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Hostel Categiries</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-train-subway same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#transportation-collapse"
+                                        aria-expanded="false">
+                                        Transportation
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="transportation-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Transportation</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Transport Vehical</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Members</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-certificate same-icon-color"></i>
+                                        <span class="nav-item">Certificates</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-id-card-clip same-icon-color"></i>
+                                        <span class="nav-item">Id Cards</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item">
+                                    <a href="#" class="sidebar-main-links">
+                                        <i class="fa fa-solid fa-chart-line same-icon-color"></i>
+                                        <span class="nav-item">Reports</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-file same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#frontend-collapse"
+                                        aria-expanded="false">
+                                        Frontend CMS
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="frontend-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="#">Control Pages</a></li>
+                                            <li class="sidebar-sub-links"><a href="#">Frontend CMS Settings</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sidebar-main-item slider-both-items">
+                                    <i class="fa fa-solid fa-gear same-icon-color"></i>
+                                    <button
+                                        class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed nav-item"
+                                        data-bs-toggle="collapse" data-bs-target="#administrative-collapse"
+                                        aria-expanded="false">
+                                        Administrative Tasks
+                                    </button>
+                                    <i class="fa-solid fa-chevron-right same-icon-color"></i>
+                                    <div class="collapse" id="administrative-collapse">
+                                        <ul class="btn-toggle-nav list-unstyled ps-5 pb-1">
+                                            <li class="sidebar-sub-links"><a href="acadmicYear.html">Acadmic Years</a></li>
+                                            <li class="sidebar-sub-links"><a href="promotion.html">Promotions</a></li>
+                                            <li class="sidebar-sub-links"><a href="mailSmsTemplate.html">Mail/SMS Templates</a></li>
+                                            <li class="sidebar-sub-links"><a href="polls.html">Polls</a></li>
+                                            <li class="sidebar-sub-links"><a href="dormitories.html">Dormitories</a></li>
+                                            <li class="sidebar-sub-links"><a href="generalSetting.html">General Settings</a></li>
+                                            <li class="sidebar-sub-links"><a href="languages.html">Languages</a></li>
+                                            <li class="sidebar-sub-links"><a href="administrators.html">Administrators</a></li>
+                                            <li class="sidebar-sub-links"><a href="permissionRoles.html">Permission Roles</a></li>
+                                            <li class="sidebar-sub-links"><a href="schoolTerms.html">School Terms</a></li>
+                                            <li class="sidebar-sub-links"><a href="dbExport.html">DB Exports</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <ul class="bottom-links-div list-unstyled d-flex border-top">
+                                        <li class="bottom-main-links">
+                                            <a href="#" class="p-2">
+                                                <i class="fa fa-solid fa-gear diff-icon-color"></i>
+                                            </a>
+                                        </li>
+                                        <li class="bottom-main-links">
+                                            <a href="#" class="p-2">
+                                                <i class="fa fa-solid fa-envelope diff-icon-color"></i>
+                                            </a>
+                                        </li>
+                                        <li class="bottom-main-links">
+                                            <a href="#" class="p-2">
+                                                <i class="fa fa-power-off diff-icon-color"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <header class="">
+                        <nav class="navbar top-navbar">
+                            <ul class="list-unstyled m-0">
+                                <li><a href="#"><i class="fa-solid fa-arrow-left same-icon-color"></i></a></i></li>
+                            </ul>
+                            <ul class="d-flex list-unstyled m-0">
+                                <li class="px-3"><a href="#"><img src="images/img-1.jpg"></a></li>
+                                <li class="px-3"><a href="#"><i class="fa fa-language same-icon-color"></i></a></li>
+                                <li class="px-3"><a href="loginPage.html"><i class="fa fa-power-off same-icon-color"></i></a></li>
+                                <li class="px-3"><a href="#"><i class="fa-solid fa-border-all same-icon-color"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+
+                <div class="col-10 offset-2 px-4 pb-5">
+                    <div class="polls-box">
+                        <h3 class="items-heading py-4 m-0 fw-normal">Items Stock</h3>
+                        <div class="list-acadmic-year p-4 bg-white rounded ">
+                            <div class="top-items p-2">
+                                <div class="top-items-heading">
+                                    <h5 class="fw-normal">List Items</h5>
+                                </div>
+                                <div class="d-flex" style="display: flex; gap: 5px;"> 
+                                    <div class="me-2">
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" name="table_search" placeholder="Search" class="form-control m-0">
+                                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-success"><a href="addPolls.html" class="text-white">Add Item</a></button>
+
+                                    <div class="btn-group no-print">
+                                        <button type="button" class="btn btn-success btn-flat ng-binding">Export</button>
+                                        <button type="button" class="btn btn-success btn-flat dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                            <span class="sr-only ng-binding">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu" role="menu">
+                                            <a class="dropdown-item ng-binding" href="index.php/items_code/export/excel">Export to Excel</a>
+                                            <a class="dropdown-item ng-binding" href="index.php/items_code/export/pdf" target="_BLANK">Export to PDF</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bottom-items border-0">
+                                <div class="card-item">
+                                    <div class="academic-year-table">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="p-3 text-color fw-medium">Reference Number</th>
+                                                    <th class="p-3 text-color fw-medium">Category</th>
+                                                    <th class="p-3 text-color fw-medium">Item</th>
+                                                    <th class="p-3 text-color fw-medium">Store</th>
+                                                    <th class="p-3 text-color fw-medium">Supplier</th>
+                                                    <th class="p-3 text-color fw-medium">Quantity</th>
+                                                    <th class="p-3 text-color fw-medium">Date</th>
+                                                    <th class="p-3 text-color fw-medium">Operation</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-3" >P528655</td>
+                                                    <td class="p-3">Electronics</td>
+                                                    <td class="p-3">Tablets</td>
+                                                    <td class="p-3">Main Store</td>
+                                                    <td class="p-3">Electronic Supplier</td>
+                                                    <td class="p-3">+30</td>
+                                                    <td class="p-3">01/01/2019</td>
+                                                    
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr> 
+                                                
+                                                <tr>
+                                                    <td class="p-3" >P327291</td>
+                                                    <td class="p-3">Food</td>
+                                                    <td class="p-3">Snacks</td>
+                                                    <td class="p-3">Down-Town Store</td>
+                                                    <td class="p-3">Food Supplier</td>
+                                                    <td class="p-3">+100</td>
+                                                    <td class="p-3">05/01/2019</td>
+                                                    
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td class="p-3" >P891821</td>
+                                                    <td class="p-3">Electronics</td>
+                                                    <td class="p-3">Computers</td>
+                                                    <td class="p-3">Down-Town Store</td>
+                                                    <td class="p-3">Electronic Supplier</td>
+                                                    <td class="p-3">+20</td>
+                                                    <td class="p-3">29/12/2018</td>
+                                                    
+                                                    <td class="p-3">
+                                                        <button type="button" class="btn btn-info">
+                                                            <i class="fa fa-pencil text-white"></i>
+                                                        </button>
+                                                        <button type="button" class="btn btn-danger">
+                                                            <i class="fa fas fa-trash-alt text-white"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10 offset-2">
+                    <footer>
+                        <div class="footer-box border bg-white">
+                            All Rights Reserved. <a href="#" class="text-decoration-none text-primary">- School
+                                Terms</a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
