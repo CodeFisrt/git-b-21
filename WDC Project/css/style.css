@@ -37,11 +37,10 @@ a {
     border-radius: 10px;
 }
 
-/* Login Page - start */
+/* Login Page - start Hrutwik */
 
 .login-page {
     background-image: url(../images/login_image.jpg);
-    background-repeat: repeat-y;
     background-size: cover;
 }
 
@@ -51,11 +50,9 @@ a {
     padding: 10% 33%;
 }
 
-.login-box {
-    width: 400px;
-}
+/* Login Page - End Hrutwik */
 
-/* Login Page - end */
+/* Sidebar - Start Hrutwik */
 
 .sidebar {
     position: fixed;
@@ -91,9 +88,6 @@ a {
     letter-spacing: 1px;
 }
 
-.profile-menu {
-    padding: 5px 0;
-}
 
 .profile-links .nav-item {
     margin-left: 10px;
@@ -114,7 +108,6 @@ a {
 }
 
 .nav-item {
-    color: #54667a;
     letter-spacing: 0.5px;
 }
 
@@ -158,36 +151,8 @@ a {
     padding-top: 5px;
 }
 
-.top-navbar {
-    padding: 22px;
-    background-image: linear-gradient(to right, #533fd0, #840fb5);
-}
-
-.top-navbar img {
-    width: 30px;
-    border-radius: 50px;
-}
-
 .sidebar-list {
     margin-bottom: 150px;
-}
-
-footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-}
-.without-content {
-    position: absolute !important;
-    bottom: 0;
-    width: 100%;
-}
-.footer-box {
-    overflow-x: hidden;
-    color: #54667a;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 17px 15px;
 }
 
 .sidebar-main-item:hover {
@@ -220,132 +185,46 @@ footer {
     color: #7460ee !important;
 }
 
-/* Dasboard - Start */
+/* Sidebar - End Hrutwik */
+
+/* Header - Start Hrutwik */
+
+.top-navbar {
+    padding: 22px;
+    background-image: linear-gradient(to right, #533fd0, #840fb5);
+}
+
+.top-navbar img {
+    width: 30px;
+    border-radius: 50px;
+}
+
+/* Header - End Hrutwik */
+
+/* Footer - Start Hrutwik */
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+.without-content {
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-box {
+    color: #54667a;
+    font-size: 1rem;
+    padding: 17px 15px;
+}
+
+/* Footer - End Hrutwik */
+
+/* Dasboard - Start Hrutwik */
 .main-heading {
     color: #533fd0;
-    background: #fff;
-}
-
-/* start css of classes schedule Page by Esha */
-.classes-text {
-    color: #7460EE;
-}
-.classes-card-container {
-    flex-direction: row;
-    justify-content: space-between;
-}
-.classes-search-icon {
-    position: relative;
-    right: 4px;
-    background-color: #EBEEEF;
-    padding: 6px;
-}
-.classes-input-div {
-    border: 1px solid #D9D9D9;
-    outline-color: #5CB3FD;
-    padding: 2px;
-}
-.classes-btn-size {
-    border-radius: 100%;
-    background-color:#009efb;
-}
-.classes-list-icon {
-    color: white;
-}
-.classes-align-div {
-    text-align: left;
-}
-/* end css of classes schedule Page by Esha */
-
-/* start online exams page css added by Esha */
-.online-exam-wrap {
-    padding-bottom: 260px;
-}
-.online-exam-header {
-    color: #7460EE;
-}
-.online-card-container {
-    flex-direction: row;
-    justify-content: space-between;
-}
-.online-search-icon {
-    border: 1px solid #D9D9D9;
-    position: relative;
-    right: 5px;
-    background-color: #EBEEEF;
-    padding: 6px;
-}
-.online-input-div {
-    border: 1px solid #D9D9D9;
-    outline-color: #5CB3FD;
-    padding: 2px;
-}
-.online-btn-size {
-    border-radius: 100%;
-    background-color:#009efb;
-    border: none;
-}
-.online-btn-size:hover  {
-    background-color: #5CB3FD;
-}
-.online-btn-size-check {
-    border-radius: 100%;
-    border: none;
-}
-.online-btn-size-check:hover {
-    background-color: #739D75;
-}
-.online-btn-size-check-trash {
-    border-radius: 100%;
-    border: none;
-}
-.online-btn-size-check-trash:hover {
-    background-color: #FF625B;
-}
-
-/* end online exams page css added by Esha */
-
-/* start Calendar page css added by Esha */
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
-
-:root {
-    --calendar-bg-color: #fff;
-    --calendar-font-color: #333333;
-    /* --weekdays-border-bottom-color: #404040; */
-    --calendar-date-hover-color: #EEEEEE;
-    --calendar-current-date-color: #fff;
-    --calendar-today-color: linear-gradient(to bottom, #fff, #fff);
-    --calendar-today-innerborder-color: transparent;
-    --calendar-nextprev-bg-color: transparent;
-    --next-prev-arrow-color : #333333;
-    --calendar-border-radius: 10px;
-    --calendar-prevnext-date-color: #484848;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.calendar {
-    /* font-family: 'IBM Plex Sans', sans-serif; */
-    position: relative;
-    max-width: 100%; /*change as per your design need */
-    min-width: 100%;
-    background: var(--calendar-bg-color);
-    color: var(--calendar-font-color);
-    margin: 20px auto;
-    box-sizing: border-box;
-    overflow: hidden;
-    font-weight: normal;
-    font-size: 12px;
-    border-radius: var(--calendar-border-radius);
-}
-
-.calendar-inner {
-    padding: 10px 10px;
-}
 }
 
 .user-info {
@@ -426,10 +305,55 @@ footer {
 }
 
 .invoice-barchart {
-    width: 360px;
-    height: 476px;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
+    padding-bottom: 170px;
+}
+
+.round-bar-chart { 
+	text-align: center; 
+} 
+
+.ui-widgets { 
+	position: relative; 
+	display: inline-block; 
+	width: 18rem; 
+	height: 18rem; 
+	border-radius: 9rem; 
+	border: 2rem solid palegreen; 
+	box-shadow: inset 0 0 7px grey; 
+	border-left-color: palegreen; 
+	border-top-color:chartreuse ; 
+	border-right-color: darkgreen; 
+	border-bottom-color: white ; 
+	text-align: center; 
+	box-sizing: border-box; 
+} 
+
+.ui-widgets:nth-child(2) { 
+	border-top-color:chartreuse ; 
+	border-right-color: white; 
+	border-left-color: palegreen; 
+	border-bottom-color: white; 
+} 
+
+.ui-widgets .ui-values { 
+	top: 40px; 
+	position: absolute; 
+	left: 10px; 
+	right: 0; 
+	font-weight: 700; 
+	font-size: 2rem; 
+} 
+
+.ui-widgets .ui-labels { 
+	left: 0; 
+	bottom: -16px; 
+	text-shadow: 0 0 4px grey; 
+	color:black; 
+	position: absolute; 
+	width: 100%; 
+	font-size: 16px; 
 }
 
 .slimScrollDiv {
@@ -445,7 +369,7 @@ footer {
 
 .message-navbar {
     position: relative;
-    height: 320px;
+    height: 300px;
     overflow-x: hidden;
 }
 
@@ -454,7 +378,7 @@ footer {
 }
 
 .meeting-block {
-    height: 380px;
+    height: 360px;
 }
 
 .calendar {
@@ -476,11 +400,6 @@ footer {
 
 .calendar .calendar-inner .calendar-body div {
     padding: 4px;
-    min-height: 150px;
-    /* line-height: 50px; */
-    border: 1px solid #EEEEEE;
-    /* margin: 10px 2px 0px; */
-    
     min-height: 20px;
     line-height: 20px;
     border: 1px solid transparent;
@@ -579,7 +498,6 @@ footer {
 }
 
 .calendar .calendar-inner .calendar-controls .calendar-next a svg path,
-.calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
 .calendar .calendar-inner .calendar-controls .calendar-prev a svg path {
     fill: var(--next-prev-arrow-color);
 }
@@ -589,23 +507,9 @@ footer {
     color: var(--calendar-prevnext-date-color);
 }
 
-.calendar .calendar-inner .calendar-body .prev-dates:hover,
-.calendar .calendar-inner .calendar-body .next-dates:hover {
-  border: 1px solid transparent;
-  pointer-events: none;
-}
+/* Dasboard - End Hrutwik */
 
-.calendar-today-div {
-    margin-left: 550px;
-    text-decoration: none;
-    color: #333333;
-    font-size: 15px;
-}
-/* end Calendar page css added by Esha */
-
-/* Dasboard - End */
-
-/* Administrative Task - Start */
+/* Administrative Task - Start Hrutwik */
 
 .top-items-heading h5 {
     font-size: 18px;
@@ -656,9 +560,21 @@ footer {
     padding: 15px 90px 15px 10px;
 }
 
-/* Administrative Task  - End */
+.add-heading-color {
+    color: #a94442;
+}
 
-/* Employee , Mypayroll,payroll start */
+.add-input-border {
+    border-color: #a94442;
+}
+
+.add-items-color {
+    color: #54667a;
+}
+
+/* Administrative Task  - End Hrutwik */
+
+/* Employee , Mypayroll,payroll - start Vishwjeet */
 
 .user-img {
     width: 35px;
@@ -699,9 +615,9 @@ footer {
     margin: 0px;
     font-size: 16px;
 }
-/* Employee , Mypayroll,payroll  end */
+/* Employee , Mypayroll,payroll - end Vishwjeet */
 
-/* Report start */
+/* Report - start Vishwjeet */
 .icons {
      padding-top: 10px;
     text-align: center;
@@ -713,19 +629,78 @@ footer {
 h5{
     font-size: 16px;
 }
-/* Report end */
-.add-heading-color {
-    color: #a94442;
+/* Report - end Vishwjeet*/
+
+
+/* start online exams page css added by Esha */
+.online-card-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.online-search-icon {
+    border: 1px solid #D9D9D9;
+    position: relative;
+    right: 4px;
+    background-color: #EBEEEF;
+    padding: 6px;
+}
+.online-input-div {
+    border: 1px solid #D9D9D9;
+    outline-color: #5CB3FD;
+    padding: 2px;
+}
+.online-btn-size {
+    border-radius: 100%;
+    background-color:#009efb;
+    border: none;
+}
+.online-btn-size:hover  {
+    background-color: #5CB3FD;
+}
+.online-btn-size-check {
+    border-radius: 100%;
+    border: none;
+}
+.online-btn-size-check:hover {
+    background-color: #739D75;
+}
+.online-btn-size-check-trash {
+    border-radius: 100%;
+    border: none;
+}
+.online-btn-size-check-trash:hover {
+    background-color: #FF625B;
 }
 
-.add-input-border {
-    border-color: #a94442;
+/* end online exams page css added by Esha */
+
+/* start css of classes schedule Page by Esha */
+.classes-text {
+    color: #7460EE;
 }
-
-.add-items-color {
-    color: #54667a;
+.classes-card-container {
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-/* Administrative Task  - End */
-/* User-Image */
-
+.classes-search-icon {
+    position: relative;
+    right: 4px;
+    background-color: #EBEEEF;
+    padding: 6px;
+}
+.classes-input-div {
+    border: 1px solid #D9D9D9;
+    outline-color: #5CB3FD;
+    padding: 2px;
+}
+.classes-btn-size {
+    border-radius: 100%;
+    background-color:#009efb;
+}
+.classes-list-icon {
+    color: white;
+}
+.classes-align-div {
+    text-align: left;
+}
+/* end css of classes schedule Page by Esha */

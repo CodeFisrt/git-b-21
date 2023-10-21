@@ -12,7 +12,7 @@ function CalendarControl() {
       calWeekDays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
       calMonthName: [
         "Jan",
-        "Feb",
+        "Feb", 
         "Mar",
         "Apr",
         "May",
