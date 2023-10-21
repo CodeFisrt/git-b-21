@@ -22,55 +22,48 @@
     <section class="login-page">
         <div class="container">
             <div class="row">
-                <div class="resistration-form">
+                <div class="col-5 resistration-form">
                     <div class="card login-box">
-                        <div class="card-block p-4">
+                        <div class="card-body">
                             <form method="">
-                                <h2 class="fw-light text-center">
-                                    <a href="#">School of WDC</a>
-                                </h2>
-                                <h5 class="box-title fw-normal">Sign in</h5>
-                                <div class="form-group py-3 outline-0">
-                                    <div class="col-xs-12">
-                                        <input class="form-control border-0 border-bottom rounded-0" type="text" placeholder="Username / E-mail">
+                                <div class="login-heading">
+                                    <h2 class="fw-light text-center">
+                                        <span class="text-primary">School of WDC</span>
+                                    </h2>
+                                    <h4 class="box-title fw-normal">Sign in</h4>
+                                </div> 
+                                <div class="py-2">
+                                    <div class="admin-input py-2">
+                                        <input class="form-control border-0 border-bottom rounded-0" type="text" placeholder="admin">
                                     </div>
-                                </div>
-                                <div class="form-group py-3">
-                                    <div class="col-xs-12">
+                                    <div class="password-input py-2">
                                         <input class="form-control border-0 border-bottom rounded-0" type="password" placeholder="Password">
                                     </div>
                                 </div>
-                                <div class="form-group p-3 primary-color">
+                                <div class="py-3">
                                     <div class="col-md-12 d-flex justify-content-between">
-                                        <div class="checkbox">
+                                        <div class="checkbox primary-color">
                                             <input id="checkbox-signup" type="checkbox">
                                             <label for="checkbox-signup"> Remember me </label>
                                         </div> 
-                                        <a href="#" class="text-dark fw-light">
-                                            <i class="fa fa-lock"></i> Restore Password
+                                        <div class="restore-password">
+                                            <a href="#" class="text-dark fw-light">
+                                                <i class="fa fa-lock"></i> Restore Password
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sign-in-btn text-center">
+                                    <button class="btn btn-info w-100 text-white fs-5" type="submit"><a href="dashboard.html" class="text-white">Sign In</a></button>
+                                </div>
+                                <div class="pt-3">
+                                    <div class="text-center py-2">
+                                        <a href="#" class="text-info">
+                                            Register a new membership
                                         </a>
                                     </div>
-                                </div>
-                                <div class="form-group text-center m-t-20">
-                                    <div class="col-xs-12">
-                                        <input type="hidden">
-                                        <button class="btn btn-info w-100 text-white fs-5" type="submit">Sign In</button>
-                                    </div>
-                                </div>
-                                <div class="form-group pt-4">
-                                    <div class="col-sm-12 text-center">
-                                        <p>
-                                            <a href="#" class="text-info">
-                                                Register a new membership
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="form-group ">
-                                    <div class="col-sm-12 text-center">
-                                        <p>
-                                            <a href="#" class="text-info">School Terms</a>
-                                        </p>
+                                    <div class="text-center  py-2">
+                                        <a href="#" class="text-info">School Terms</a>
                                     </div>
                                 </div>
                             </form>
